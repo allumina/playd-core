@@ -1,6 +1,8 @@
 {
     "name": "allumina/playd-laravel",
     "description": "",
+    "type": "library",
+    "version": "0.0.1-alpha",
     "keywords": [],
     "homepage": "https://allumina.it",
     "authors": [

@@ -21,11 +21,10 @@ class PlaydServiceProvider extends ServiceProvider {
      * A list of artisan commands for your package
      * 
      * @var array
-
-    protected $commands = [
-        FooCommand::class,
-    ];
      */
+    protected $commands = [
+        // FooCommand::class,
+    ];
 
     /**
      * Bootstrap the application services.

@@ -9,6 +9,5 @@ return [
     | Describe what it does. 
     */
 
-    //'key' => 'value',
-
+    'connection' => env('PLAYD_DB_CONNECTION', 'mysql'),
 ];

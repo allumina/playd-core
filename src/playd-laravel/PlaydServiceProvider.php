@@ -5,11 +5,6 @@ namespace Allumina\Playd;
 use Illuminate\Support\ServiceProvider;
 use Vendor\Package\Commands\FooCommand;
 
-/**
- * A Laravel 5.5 package boilerplate
- *
- * @author: Rémi Collin (remi@code16.fr)
- */
 class PlaydServiceProvider extends ServiceProvider {
 
     /**
@@ -20,16 +15,17 @@ class PlaydServiceProvider extends ServiceProvider {
      * 
      * @var  string
      */
-    protected $packageName = 'package';
+    protected $packageName = 'playd';
 
     /**
      * A list of artisan commands for your package
      * 
      * @var array
-     */
+
     protected $commands = [
         FooCommand::class,
     ];
+     */
 
     /**
      * Bootstrap the application services.

@@ -1,11 +1,11 @@
 <?php 
 
-namespace Allumina\Playd;
+namespace Allumina\Playd\Core;
 
 use Illuminate\Support\ServiceProvider;
 use Vendor\Package\Commands\FooCommand;
 
-class PlaydServiceProvider extends ServiceProvider {
+class PlaydCoreServiceProvider extends ServiceProvider {
 
     /**
      * This will be used to register config & view in 
@@ -15,7 +15,7 @@ class PlaydServiceProvider extends ServiceProvider {
      * 
      * @var  string
      */
-    protected $packageName = 'playd';
+    protected $packageName = 'playd-core';
 
     /**
      * A list of artisan commands for your package

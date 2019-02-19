@@ -22,18 +22,18 @@
     },
     "autoload": {
        "psr-4": {
-            "Allumina\\Playd\\": "src/playd-core"
+            "Allumina\\Playd\\Core\\": "src/playd-core"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Allumina\\Playd\\Tests\\": "tests/"
+            "Allumina\\Playd\\Core\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Allumina\\Playd\\PlaydServiceProvider"
+                "Allumina\\Playd\\Core\\PlaydCoreServiceProvider"
             ]
         }
     },

@@ -1,5 +1,5 @@
 {
-    "name": "allumina/playd-laravel",
+    "name": "allumina/playd-core",
     "description": "",
     "type": "library",
     "keywords": [],
@@ -22,7 +22,7 @@
     },
     "autoload": {
        "psr-4": {
-            "Allumina\\Playd\\": "src/playd-laravel"
+            "Allumina\\Playd\\": "src/playd-core"
         }
     },
     "autoload-dev": {

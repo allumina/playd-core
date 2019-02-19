@@ -1,1 +1,1 @@
-# Playd Laravel Core Package
+# Playd Core Package

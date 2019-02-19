@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Ramsey\Uuid\Uuid;
 use App\Models\Common\Constants;
 
-class BaseModel extends Model
+abstract class BaseModel extends Model
 {
     /**
      * The name of the "created at" column.

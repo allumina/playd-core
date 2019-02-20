@@ -1,10 +1,8 @@
-<?php 
+<?php
+
+use Illuminate\Http\Request;
 
 Route::group(['prefix' => 'v1/system'], function () {
-    Route::get('debug', 'SystemController@debug');
-    Route::post('debug', 'SystemController@debug');
-    Route::put('debug', 'SystemController@debug');
-
     Route::get('time', 'SystemController@time');
     Route::get('day', 'SystemController@day');
     Route::get('week', 'SystemController@week');

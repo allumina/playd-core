@@ -1,6 +1,6 @@
 <?php
 
-namespace Allumina\Playd\Utils;
+namespace Allumina\Playd\Core\Utils;
 
 class DateUtils
 {

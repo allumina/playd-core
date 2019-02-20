@@ -33,7 +33,8 @@ class PlaydCoreServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'/../routes/routes.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
 
         // Register Views from your package
         $this->loadViewsFrom(__DIR__.'/../views', $this->packageName);

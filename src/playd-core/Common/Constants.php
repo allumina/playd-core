@@ -1,6 +1,6 @@
 <?php
 
-namespace Allumina\Playd\Common;
+namespace Allumina\Playd\Core\Common;
 
 class Constants
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Allumina\Playd\Models\Base;
+namespace Allumina\Playd\Core\Models\Base;
 
 use Illuminate\Database\Eloquent\Model;
 use Ramsey\Uuid\Uuid;

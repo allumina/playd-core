@@ -2,7 +2,9 @@
 
 namespace Allumina\Playd\Core;
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Passport\Passport;
 
 class PlaydCoreServiceProvider extends ServiceProvider {
 
@@ -64,6 +66,10 @@ class PlaydCoreServiceProvider extends ServiceProvider {
         if ($this->app->runningInConsole()) {
             $this->commands($this->commands);
         }
+
+        Passport::routes();
+        Passport::tokensExpireIn(now()->addSeconds(App::environment('PLAYD_TOKEN_EXPIRES_IN')));
+        Passport::tokensExpireIn(now()->addSeconds(App::environment('PLAYD_TOKEN_REFRESH_IN')));
     }
 
     /**

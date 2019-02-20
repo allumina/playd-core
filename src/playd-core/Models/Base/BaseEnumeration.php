@@ -1,6 +1,6 @@
 <?php
 
-namespace Allumina\Playd\Models\Base;
+namespace Allumina\Playd\Core\Models\Base;
 
 use Ramsey\Uuid\Uuid;
 use App\Models\Common\Constants;

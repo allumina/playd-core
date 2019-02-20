@@ -2,7 +2,7 @@
 
 namespace Allumina\Playd\Models;
 
-use Allumina\Playd\Models\Base\BaseModel;
+use Allumina\Playd\Core\Models\Base\BaseModel;
 
 class GroupModel extends BaseModel
 {

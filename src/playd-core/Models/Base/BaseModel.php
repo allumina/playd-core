@@ -1,10 +1,10 @@
 <?php
 
-namespace Allumina\Playd\Models\Base;
+namespace Allumina\Playd\Core\Models\Base;
 
 use Illuminate\Database\Eloquent\Model;
 use Ramsey\Uuid\Uuid;
-use App\Models\Common\Constants;
+use Allumina\Playd\Core\Common\Constants;
 
 abstract class BaseModel extends Model
 {
@@ -29,7 +29,6 @@ abstract class BaseModel extends Model
      */
     const DELETED_AT = 'deleteTime';
 
-    protected $connection = 'mysql';
     protected $primaryKey = 'uid';
 
     public $timestamps = true;

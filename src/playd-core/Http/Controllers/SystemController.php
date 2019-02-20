@@ -6,7 +6,6 @@ use Allumina\Playd\Core\Http\Controllers\Base\BaseController;
 use Allumina\Playd\Core\Messages\DataResponse;
 use Allumina\Playd\Core\Utils\DateUtils;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\App;
 use Ramsey\Uuid\Uuid;
 
 class SystemController extends BaseController

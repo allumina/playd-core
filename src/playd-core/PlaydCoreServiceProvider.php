@@ -3,7 +3,6 @@
 namespace Allumina\Playd\Core;
 
 use Illuminate\Support\ServiceProvider;
-use Vendor\Package\Commands\FooCommand;
 
 class PlaydCoreServiceProvider extends ServiceProvider {
 
@@ -33,8 +32,7 @@ class PlaydCoreServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-        $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/routes.php');
 
         // Register Views from your package
         $this->loadViewsFrom(__DIR__.'/../views', $this->packageName);
@@ -80,5 +78,4 @@ class PlaydCoreServiceProvider extends ServiceProvider {
         );
 
     }
-
 }

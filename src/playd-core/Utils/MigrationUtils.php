@@ -6,11 +6,11 @@ use Allumina\Playd\Core\Common\Constants;
 
 class MigrationUtils
 {
-    public static function initializeBaseModelProperties(&$table)
+    public static function initializeBaseModelProperties(&$table, $uidAsPrimary = true)
     {
         $table->uuid('uid')->unique();
-        $table->char('type', Constants::IDENTIFIER_LENGTH)->nullable();
-        $table->char('category', Constants::IDENTIFIER_LENGTH)->nullable();
+        $table->string('type', Constants::IDENTIFIER_LENGTH)->nullable();
+        $table->string('category', Constants::IDENTIFIER_LENGTH)->nullable();
         $table->boolean('isVisible')->default(false);
         $table->boolean('isEnabled')->default(false);
         $table->boolean('isDeleted')->default(false);
@@ -27,9 +27,16 @@ class MigrationUtils
         $table->timestamp('createTime')->nullable();
         $table->timestamp('updateTime')->nullable();
         $table->timestamp('deleteTime')->nullable();
-        $table->char('hash', Constants::HASH_LENGTH)->nullable();
+        $table->string('hash', Constants::HASH_LENGTH)->nullable();
+        $table->text('raw')->nullable();
+        $table->text('acl')->nullable();
 
-        $table->primary('uid');
+        if ($uidAsPrimary) {
+            $table->primary('uid');
+        } else {
+            $table->index('uid');
+        }
+
         $table->index('ownerId');
         $table->index('userId');
         $table->index('parentId');

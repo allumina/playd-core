@@ -52,7 +52,8 @@ abstract class BaseModel extends Model
         'userId',
         'parentId',
         'ancestorId',
-        'groupId'
+        'groupId',
+        'raw'
     ];
 
     protected $guarded = [
@@ -72,18 +73,6 @@ abstract class BaseModel extends Model
     public function assignId()
     {
         $this->uid = Uuid::uuid4()->toString();
-    }
-
-    protected function __initialize(
-        bool $isVisible = true,
-        bool $isEnabled = true,
-        bool $isDeleted = false,
-        int $flags = 0
-    ) {
-        $this->isVisible = $isVisible;
-        $this->isEnabled = $isEnabled;
-        $this->isDeleted = $isDeleted;
-        $this->flags = $flags;
     }
 
     protected function __parse(array $attributes = array())
@@ -180,6 +169,50 @@ abstract class BaseModel extends Model
             return $item;
         }
         return null;
+    }
+
+    protected function setFillableAttribute($value)
+    {
+        dd('setFillableAttribute');
+
+        if (count(class_parents($this)) > 1) # Check if there is more than one parent, they all need the Eloquent model.
+        {
+            # Yes, there are parents. We need to combine the parent $fillable with the extra ones in the child.
+            $this->fillable = array_unique(array_merge($this->fillable, $value));
+        }
+        else
+        {
+            # No parents except Eloquent model.
+            $this->fillable = $value;
+        }
+    }
+
+    protected function setHiddenAttribute($value)
+    {
+        if (count(class_parents($this)) > 1) # Check if there is more than one parent, they all need the Eloquent model.
+        {
+            # Yes, there are parents. We need to combine the parent $hidden with the extra ones in the child.
+            $this->hidden = array_unique(array_merge($this->hidden,$value));
+        }
+        else
+        {
+            # No parents except Eloquent model.
+            $this->hidden = $value;
+        }
+    }
+
+    protected function setGuardedAttribute($value)
+    {
+        if (count(class_parents($this)) > 1) # Check if there is more than one parent, they all need the Eloquent model.
+        {
+            # Yes, there are parents. We need to combine the parent $guarded with the extra ones in the child.
+            $this->guarded = array_unique(array_merge($this->guarded,$value));
+        }
+        else
+        {
+            # No parents except Eloquent model.
+            $this->guarded = $value;
+        }
     }
 
 }

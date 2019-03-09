@@ -1,31 +1,34 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: gesposito
+ * Date: 09/03/19
+ * Time: 12:11
+ */
 
 namespace Allumina\Playd\Core\Models;
 
 use Allumina\Playd\Core\Models\Base\BaseModel;
 
-class LocaleModel extends BaseModel
+class CountryModel extends BaseModel
 {
-    protected $table = 'core_locales';
+    protected $table = 'core_countries';
 
     public function __construct(array $attributes = array())
     {
         parent::__construct($attributes);
+
         $this->code = null;
-        $this->nativeName = null;
-        $this->displayName = null;
-        $this->englishName = null;
-        $this->twoLetterISOLanguageName = null;
-        $this->threeLetterISOLanguageName = null;
+        $this->name = null;
+        $this->latitude = null;
+        $this->longitude = null;
     }
 
     public static function initialize(
         $code,
-        $nativeName,
-        $displayName,
-        $englishName,
-        $twoLetterISOLanguageName,
-        $threeLetterISOLanguageName,
+        $name,
+        $latitude,
+        $longitude,
         $isVisible = true,
         $isEnabled = true,
         $isDeleted = false,
@@ -35,11 +38,9 @@ class LocaleModel extends BaseModel
         $instance = new self();
 
         $instance->code = $code;
-        $instance->nativeName = $nativeName;
-        $instance->displayName = $displayName;
-        $instance->englishName = $englishName;
-        $instance->twoLetterISOLanguageName = $twoLetterISOLanguageName;
-        $instance->threeLetterISOLanguageName = $threeLetterISOLanguageName;
+        $instance->name = $name;
+        $instance->latitude = $latitude;
+        $instance->longitude = $longitude;
 
         $instance->isVisible = $isVisible;
         $instance->isEnabled = $isEnabled;

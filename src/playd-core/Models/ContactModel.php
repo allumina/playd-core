@@ -1,22 +1,25 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: gesposito
+ * Date: 09/03/19
+ * Time: 12:08
+ */
 
 namespace Allumina\Playd\Core\Models;
 
-use Allumina\Playd\Core\Models\Base\BaseModel;
 
-class LocaleModel extends BaseModel
+class ContactModel
 {
-    protected $table = 'core_locales';
+    protected $table = 'core_contacts';
 
     public function __construct(array $attributes = array())
     {
         parent::__construct($attributes);
-        $this->code = null;
-        $this->nativeName = null;
-        $this->displayName = null;
-        $this->englishName = null;
-        $this->twoLetterISOLanguageName = null;
-        $this->threeLetterISOLanguageName = null;
+
+        $this->phone = null;
+        $this->email = null;
+        $this->website = null;
     }
 
     public static function initialize(
@@ -30,8 +33,7 @@ class LocaleModel extends BaseModel
         $isEnabled = true,
         $isDeleted = false,
         $flags = 0
-    )
-    {
+    ) {
         $instance = new self();
 
         $instance->code = $code;

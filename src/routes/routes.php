@@ -8,3 +8,8 @@ Route::group(['namespace' => 'Allumina\Playd\Core\Http\Controllers', 'prefix' =>
     Route::get('year', 'SystemController@year');
     Route::get('uuid', 'SystemController@uuid');
 });
+
+Route::group(['namespace' => 'Allumina\Playd\Core\Http\Controllers', 'prefix' => 'api/v1/data'], function () {
+    Route::get('countries', 'DataController@countries');
+    Route::get('locales', 'DataController@locales');
+});

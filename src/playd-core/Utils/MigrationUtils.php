@@ -15,6 +15,7 @@ class MigrationUtils
         $table->boolean('isEnabled')->default(false);
         $table->boolean('isDeleted')->default(false);
         $table->unsignedInteger('flags')->default(0);
+        $table->string('locale', 16)->default('');
         $table->uuid('localId')->nullable();
         $table->uuid('ownerId')->nullable();
         $table->uuid('userId')->nullable();
@@ -32,9 +33,9 @@ class MigrationUtils
         $table->text('acl')->nullable();
 
         if ($uidAsPrimary) {
-            $table->primary('uid');
+            $table->primary(['uid', 'locale']);
         } else {
-            $table->index('uid');
+            $table->unique(['uid', 'locale']);
         }
 
         $table->index('ownerId');
@@ -44,5 +45,8 @@ class MigrationUtils
         $table->index('groupId');
         $table->index('applicationId');
         $table->index('environmentId');
+
+        if ($table->getTable() != 'core_locales')
+            $table->foreign('locale')->references('code')->on('core_locales');
     }
 }

@@ -9,21 +9,21 @@
 namespace Allumina\Playd\Core\Models;
 
 
-class ContactModel
+class GroupModel
 {
-    protected $table = 'core_contacts';
+    protected $table = 'core_groups';
 
     public function __construct(array $attributes = array())
     {
         parent::__construct($attributes);
 
-        $this->type = null;
-        $this->value = null;
+        $this->name = null;
+        $this->description = null;
     }
 
     public static function initialize(
-        $type,
-        $value,
+        $name,
+        $description,
         $isVisible = true,
         $isEnabled = true,
         $isDeleted = false,
@@ -31,8 +31,8 @@ class ContactModel
     ) {
         $instance = new self();
 
-        $instance->type = $type;
-        $instance->value = $value;
+        $instance->name = $name;
+        $instance->description = $description;
 
         $instance->isVisible = $isVisible;
         $instance->isEnabled = $isEnabled;

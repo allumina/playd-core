@@ -8,8 +8,8 @@ class PlaydCoreTablesSeeder extends Seeder
 {
     public function run()
     {
-        self::seedCountries();
         self::seedLocales();
+        self::seedCountries();
     }
 
     private static function seedCountries() {

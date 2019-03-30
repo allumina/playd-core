@@ -15,7 +15,8 @@
         "ext-json": "*",
         "illuminate/support": "5.7.*",
         "ramsey/uuid": "^3.8",
-        "laravel/passport": "^7.2"
+        "laravel/passport": "^7.2",
+        "predis/predis": "^1.1"
     },
     "require-dev": {
         "orchestra/testbench": "^3.6",

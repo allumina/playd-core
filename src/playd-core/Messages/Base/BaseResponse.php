@@ -17,13 +17,6 @@ abstract class BaseResponse
     public const BAD_GATEWAY = 502;
     public const SERVICE_UNAVAILABLE = 503;
 
-    public $data;
-    public $error;
-    public $status;
-    public $page;
-    public $count;
-    public $debug;
-
     public function __construct()
     {
         $this->data = [];

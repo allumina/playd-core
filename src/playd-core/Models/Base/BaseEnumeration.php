@@ -12,19 +12,23 @@ class BaseEnumeration
 
     public $uid;
     public $identifier;
+    public $description;
 
-    public function __construct(int $uid, string $identifier)
+    public function __construct(int $uid, string $identifier, string $description = null)
     {
         $this->uid = $uid;
         $this->identifier = $identifier;
+        $this->description = $description;
     }
 
     protected function __initialize(
         int $uid,
-        string $identifier
+        string $identifier,
+        string $description
     ) {
         $this->uid = $uid;
         $this->identifier = $identifier;
+        $this->description = $description;
     }
 
     public function assignId()

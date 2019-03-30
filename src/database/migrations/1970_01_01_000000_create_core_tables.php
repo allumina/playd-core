@@ -39,6 +39,13 @@ class CreateCoreTables extends Migration
             $table->primary('code');
         });
 
+        Schema::create('core_groups', function (Blueprint $table) {
+            CoreMigrationUtils::initializeBaseModelProperties($table);
+
+            $table->string('name', 512)->nullable();
+            $table->text('description')->nullable();
+        });
+
         Schema::create('core_geo', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
 
@@ -62,6 +69,7 @@ class CreateCoreTables extends Migration
     public function down()
     {
         Schema::dropIfExists('core_geo');
+        Schema::dropIfExists('core_groups');
         Schema::dropIfExists('core_countries');
         Schema::dropIfExists('core_locales');
     }

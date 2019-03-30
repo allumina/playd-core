@@ -48,12 +48,14 @@ abstract class BaseModel extends Model
         'isEnabled',
         'isDeleted',
         'flags',
+        'locale',
         'ownerId',
         'userId',
         'parentId',
         'ancestorId',
         'groupId',
-        'raw'
+        'raw',
+        'acl'
     ];
 
     protected $guarded = [
@@ -68,6 +70,7 @@ abstract class BaseModel extends Model
     {
         parent::__construct($attributes);
         $this->uid = Uuid::uuid4()->toString();
+        $this->locale = '';
     }
 
     public function assignId()
@@ -97,6 +100,9 @@ abstract class BaseModel extends Model
         }
         if (!empty($attributes['flags'])) {
             $this->flags = $attributes['flags'];
+        }
+        if (!empty($attributes['locale'])) {
+            $this->locale = $attributes['locale'];
         }
         if (!empty($attributes['localId'])) {
             $this->localId = $attributes['localId'];
@@ -173,8 +179,6 @@ abstract class BaseModel extends Model
 
     protected function setFillableAttribute($value)
     {
-        dd('setFillableAttribute');
-
         if (count(class_parents($this)) > 1) # Check if there is more than one parent, they all need the Eloquent model.
         {
             # Yes, there are parents. We need to combine the parent $fillable with the extra ones in the child.

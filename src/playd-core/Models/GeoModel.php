@@ -11,27 +11,21 @@ class GeoModel extends BaseModel
     public function __construct(array $attributes = array())
     {
         parent::__construct($attributes);
-
-        $this->address = null;
-        $this->city = null;
-        $this->district = null;
-        $this->postalCode = null;
-        $this->country = null;
-        $this->latitude = null;
-        $this->longitude = null;
     }
 
     public static function initialize(
+        $identifier,
+        $friendly,
         $address,
         $city,
         $district,
-        $postalCode,
+        $postal_code,
         $country,
         $latitude,
         $longitude,
-        $isVisible = true,
-        $isEnabled = true,
-        $isDeleted = false,
+        $is_visible = true,
+        $is_enabled = true,
+        $is_deleted = false,
         $flags = 0
     )
     {
@@ -40,14 +34,16 @@ class GeoModel extends BaseModel
         $instance->address = $address;
         $instance->city = $city;
         $instance->district = $district;
-        $instance->postalCode = $postalCode;
+        $instance->postal_code = $postal_code;
         $instance->country = $country;
         $instance->latitude = $latitude;
         $instance->longitude = $longitude;
 
-        $instance->isVisible = $isVisible;
-        $instance->isEnabled = $isEnabled;
-        $instance->isDeleted = $isDeleted;
+        $instance->identifier = $identifier;
+        $instance->friendly = $friendly;
+        $instance->is_visible = $is_visible;
+        $instance->is_enabled = $is_enabled;
+        $instance->is_deleted = $is_deleted;
         $instance->flags = $flags;
 
         return $instance;
@@ -56,13 +52,5 @@ class GeoModel extends BaseModel
     public static function boot()
     {
         parent::boot();
-    }
-
-    /**
-     * Get the phone record associated with the user.
-     */
-    public function country()
-    {
-        return $this->hasOne('Allumina\Playd\Core\Models\CountryModel');
     }
 }

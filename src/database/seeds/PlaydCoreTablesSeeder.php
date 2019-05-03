@@ -3,6 +3,7 @@
 use \Illuminate\Database\Seeder;
 use Allumina\Playd\Core\Models\LocaleModel;
 use Allumina\Playd\Core\Models\CountryModel;
+use \Ramsey\Uuid\Uuid;
 
 class PlaydCoreTablesSeeder extends Seeder
 {
@@ -15,7 +16,9 @@ class PlaydCoreTablesSeeder extends Seeder
     private static function seedCountries() {
         $handle = fopen('database/seeds/data/countries.csv', 'r');
         while (($data = fgetcsv($handle, 1000, ';')) !== false) {
-            $model = CountryModel::initialize($data[0],
+            $model = CountryModel::initialize(
+                Uuid::uuid4()->toString(),
+                $data[0],
                 $data[3],
                 (strlen($data[1]) > 1 ? floatval($data[1]) : null),
                 (strlen($data[2]) > 1 ? floatval($data[2]) : null));
@@ -26,7 +29,9 @@ class PlaydCoreTablesSeeder extends Seeder
     private static function seedLocales() {
         $handle = fopen('database/seeds/data/locales.csv', 'r');
         while (($data = fgetcsv($handle, 1000, ';')) !== false) {
-            $model = LocaleModel::initialize($data[0],
+            $model = LocaleModel::initialize(
+                Uuid::uuid4()->toString(),
+                $data[0],
                 $data[1],
                 $data[2],
                 $data[3],

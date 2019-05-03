@@ -14,7 +14,7 @@ class DataController extends BaseController
     {
         $response = new DataResponse();
 
-        $response->data = CountryModel::all()->orderBy('code');
+        $response->data = CountryModel::all()->orderBy('identifier');
         $response->status = DataResponse::OK;
         $response->error = null;
         $response->request = $request;
@@ -29,7 +29,7 @@ class DataController extends BaseController
     {
         $response = new DataResponse();
 
-        $response->data = LocaleModel::all()->orderBy('code');
+        $response->data = LocaleModel::all()->orderBy('identifiercompo');
         $response->status = DataResponse::OK;
         $response->error = null;
         $response->request = $request;

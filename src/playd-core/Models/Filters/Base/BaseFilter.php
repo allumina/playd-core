@@ -14,12 +14,13 @@ abstract class BaseFilter
 {
     public $uid;
     public $identifier;
+    public $friendly;
     public $locale;
     public $category;
     public $type;
-    public $isVisible;
-    public $isEnabled;
-    public $isDeleted;
+    public $is_visible;
+    public $is_enabled;
+    public $is_deleted;
     public $flags;
     public $localId;
     public $ownerId;
@@ -43,12 +44,13 @@ abstract class BaseFilter
     {
         $this->uid = null;
         $this->identifier = null;
+        $this->friendly = null;
         $this->locale = null;
         $this->category = null;
         $this->type = null;
-        $this->isVisible = null;
-        $this->isEnabled = null;
-        $this->isDeleted = null;
+        $this->is_visible = null;
+        $this->is_enabled = null;
+        $this->is_deleted = null;
         $this->flags = null;
         $this->localId = null;
         $this->ownerId = null;
@@ -69,12 +71,13 @@ abstract class BaseFilter
     {
         $this->uid = $request->input('uid', null);
         $this->identifier = $request->input('identifier', null);
+        $this->friendly = $request->input('friendly', null);
         $this->locale = $request->input('locale', env('APP_DEFAULT_LOCALE'));
         $this->category = $request->input('category', null);
         $this->type = $request->input('type', null);
-        $this->isVisible = $request->input('isVisible', null);
-        $this->isEnabled = $request->input('isEnabled', null);
-        $this->isDeleted = $request->input('isDeleted', null);
+        $this->is_visible = $request->input('is_visible', null);
+        $this->is_enabled = $request->input('is_enabled', null);
+        $this->is_deleted = $request->input('is_deleted', null);
         $this->flags = $request->input('flags', null);
         $this->ownerId = $request->input('ownerId', null);
         $this->userId = $request->input('userId', null);
@@ -101,6 +104,9 @@ abstract class BaseFilter
             if ($this->identifier != null) {
                 $q->where('identifier', $this->identifier);
             }
+            if ($this->friendly != null) {
+                $q->where('friendly', $this->friendly);
+            }
             if ($this->localize && $this->locale != null && strtolower($this->locale) !== Constants::ALL_KEYWORD) {
                 $q->where('locale', $this->locale);
             }
@@ -110,14 +116,14 @@ abstract class BaseFilter
             if ($this->type != null) {
                 $q->where('type', $this->type);
             }
-            if ($this->isVisible != null) {
-                $q->where('isVisible', $this->isVisible);
+            if ($this->is_visible != null) {
+                $q->where('is_visible', $this->is_visible);
             }
-            if ($this->isEnabled != null) {
-                $q->where('isEnabled', $this->isEnabled);
+            if ($this->is_enabled != null) {
+                $q->where('is_enabled', $this->is_enabled);
             }
-            if ($this->isDeleted != null) {
-                $q->where('isDeleted', $this->isDeleted);
+            if ($this->is_deleted != null) {
+                $q->where('is_deleted', $this->is_deleted);
             }
             if ($this->flags != null) {
                 $q->where('flags', $this->flags);

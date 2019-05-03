@@ -9,6 +9,7 @@
 namespace Allumina\Playd\Core\Models;
 
 use Allumina\Playd\Core\Models\Base\BaseModel;
+use Ramsey\Uuid\Uuid;
 
 class CountryModel extends BaseModel
 {
@@ -17,34 +18,31 @@ class CountryModel extends BaseModel
     public function __construct(array $attributes = array())
     {
         parent::__construct($attributes);
-
-        $this->code = null;
-        $this->name = null;
-        $this->latitude = null;
-        $this->longitude = null;
     }
 
     public static function initialize(
-        $code,
+        $identifier,
+        $friendly,
         $name,
         $latitude,
         $longitude,
-        $isVisible = true,
-        $isEnabled = true,
-        $isDeleted = false,
+        $is_visible = true,
+        $is_enabled = true,
+        $is_deleted = false,
         $flags = 0
     )
     {
         $instance = new self();
 
-        $instance->code = $code;
         $instance->name = $name;
         $instance->latitude = $latitude;
         $instance->longitude = $longitude;
 
-        $instance->isVisible = $isVisible;
-        $instance->isEnabled = $isEnabled;
-        $instance->isDeleted = $isDeleted;
+        $instance->identifier = $identifier;
+        $instance->friendly = $friendly;
+        $instance->is_visible = $is_visible;
+        $instance->is_enabled = $is_enabled;
+        $instance->is_deleted = $is_deleted;
         $instance->flags = $flags;
 
         return $instance;

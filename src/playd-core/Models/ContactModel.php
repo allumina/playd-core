@@ -8,35 +8,53 @@
 
 namespace Allumina\Playd\Core\Models;
 
+use Allumina\Playd\Core\Models\Base\BaseModel;
 
-class ContactModel
+class ContactModel extends BaseModel
 {
+    public const WEBSITE = 'website';
+    public const PHONE = 'phone';
+    public const INFO = 'info';
+    public const BOOKING = 'booking';
+    public const EMAIL = 'email';
+    public const SOCIAL = 'social';
+    public const FACEBOOK = 'facebook';
+    public const TRIPADVISOR = 'tripadvisor';
+    public const TWITTER = 'twitter';
+    public const INSTAGRAM = 'instagram';
+    public const PINTEREST = 'pinterest';
+
     protected $table = 'core_contacts';
 
     public function __construct(array $attributes = array())
     {
         parent::__construct($attributes);
-
-        $this->type = null;
-        $this->value = null;
     }
 
     public static function initialize(
+        $identifier,
+        $friendly,
+        $locale,
+        $category,
         $type,
         $value,
-        $isVisible = true,
-        $isEnabled = true,
-        $isDeleted = false,
+        $is_visible = true,
+        $is_enabled = true,
+        $is_deleted = false,
         $flags = 0
     ) {
         $instance = new self();
 
-        $instance->type = $type;
         $instance->value = $value;
 
-        $instance->isVisible = $isVisible;
-        $instance->isEnabled = $isEnabled;
-        $instance->isDeleted = $isDeleted;
+        $instance->identifier = $identifier;
+        $instance->friendly = $friendly;
+        $instance->locale = $locale;
+        $instance->category = $category;
+        $instance->type = $type;
+        $instance->is_visible = $is_visible;
+        $instance->is_enabled = $is_enabled;
+        $instance->is_deleted = $is_deleted;
         $instance->flags = $flags;
 
         return $instance;

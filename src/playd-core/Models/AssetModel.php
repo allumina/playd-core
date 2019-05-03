@@ -10,9 +10,22 @@ namespace Allumina\Playd\Core\Models;
 
 use Allumina\Playd\Core\Models\Base\BaseModel;
 
-class GroupModel extends BaseModel
+class AssetModel extends BaseModel
 {
-    protected $table = 'core_groups';
+    public const IMAGE = 'image';
+    public const VIDEO = 'video';
+    public const DOCUMENT = 'document';
+
+    public const IMAGES_PATH = 'images';
+    public const VIDEOS_PATH = 'videos';
+    public const DOCUMENTS_PATH = 'documents';
+
+    protected $table = 'core_assets';
+
+    /*
+    public function setOriginalFilenameAttribute($value) { $this->attributes['original_filename'] = $value; }
+    public function getOrifinalFilenameAttribute() { return $this->attributes['original_filename']; }
+    */
 
     public function __construct(array $attributes = array())
     {
@@ -25,8 +38,11 @@ class GroupModel extends BaseModel
         $locale,
         $category,
         $type,
-        $name,
-        $description,
+        $filename,
+        $original_filename,
+        $filesize,
+        $url,
+        $mime,
         $is_visible = true,
         $is_enabled = true,
         $is_deleted = false,
@@ -34,14 +50,17 @@ class GroupModel extends BaseModel
     ) {
         $instance = new self();
 
-        $instance->name = $name;
-        $instance->description = $description;
+        $instance->filename = $filename;
+        $instance->original_filename = $original_filename;
+        $instance->filesize = $filesize;
+        $instance->url = $url;
+        $instance->mime = $mime;
 
         $instance->identifier = $identifier;
         $instance->friendly = $friendly;
+        $instance->locale = $locale;
         $instance->category = $category;
         $instance->type = $type;
-        $instance->locale = $locale;
         $instance->is_visible = $is_visible;
         $instance->is_enabled = $is_enabled;
         $instance->is_deleted = $is_deleted;

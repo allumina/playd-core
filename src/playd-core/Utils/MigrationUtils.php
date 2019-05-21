@@ -60,4 +60,9 @@ class MigrationUtils
         // if ($table->getTable() != 'core_locales')
         //     $table->foreign('locale')->references('identifier')->on('core_locales');
     }
+
+    public static function initializeBaseContentProperties(&$table)
+    {
+
+    }
 }

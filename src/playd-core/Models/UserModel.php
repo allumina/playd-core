@@ -34,6 +34,8 @@ class UserModel extends Authenticatable implements MustVerifyEmail
      */
     const DELETED_AT = 'delete_time';
 
+    protected $primaryKey = 'identifier';
+
     protected $table = 'core_users';
 
     public $timestamps = true;

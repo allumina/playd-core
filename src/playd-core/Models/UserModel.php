@@ -58,6 +58,25 @@ class UserModel extends Authenticatable implements MustVerifyEmail
         'password', 'remember_token',
     ];
 
+    public function __construct(array $attributes = array())
+    {
+        parent::__construct($attributes);
+        $this->uid = Uuid::uuid4()->toString();
+        $this->locale = '';
+    }
+
+    public function assignId()
+    {
+        $this->uid = Uuid::uuid4()->toString();
+        return $this->uid;
+    }
+
+    public function assignIdentifier()
+    {
+        $this->identifier = Uuid::uuid4()->toString();
+        return $this->identifier;
+    }
+
     public function getRoles()
     {
         return $this->coupled(RoleModel::class, 'core_roles', 'coupled_roles');

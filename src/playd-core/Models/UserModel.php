@@ -41,6 +41,14 @@ class UserModel extends Authenticatable implements MustVerifyEmail
 
     public $timestamps = true;
 
+    protected $casts = [
+        'uid' => 'string',
+        'identifier' => 'string',
+        'create_time' => 'timestamp',
+        'update_time' => 'timestamp',
+        'delete_time' => 'timestamp',
+    ];
+
     /**
      * The attributes that are mass assignable.
      *

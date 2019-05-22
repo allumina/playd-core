@@ -5,6 +5,7 @@ namespace Allumina\Playd\Core\Models;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Ramsey\Uuid\Uuid;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
 use Laravel\Passport\HasApiTokens;
 

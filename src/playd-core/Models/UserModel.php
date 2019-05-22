@@ -13,7 +13,30 @@ class UserModel extends Authenticatable implements MustVerifyEmail
     use Notifiable, HasApiTokens;
     use EntrustUserTrait;
 
+    /**
+     * The name of the "created at" column.
+     *
+     * @var string
+     */
+    const CREATED_AT = 'create_time';
+
+    /**
+     * The name of the "updated at" column.
+     *
+     * @var string
+     */
+    const UPDATED_AT = 'update_time';
+
+    /**
+     * The name of the "deleted at" column.
+     *
+     * @var string
+     */
+    const DELETED_AT = 'delete_time';
+
     protected $table = 'core_users';
+
+    public $timestamps = true;
 
     /**
      * The attributes that are mass assignable.

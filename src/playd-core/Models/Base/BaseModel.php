@@ -74,8 +74,14 @@ abstract class BaseModel extends Model
         'hash',
         'raw',
         'acl',
+        'owner_id',
+        'user_id',
+        'parent_id',
+        'ancestor_id',
+        'group_id',
+        'external_id',
         'application_id',
-        'environment_id'
+        'environment_id',
     ];
 
     /*

@@ -10,9 +10,9 @@ namespace Allumina\Playd\Core\Models;
 
 use Allumina\Playd\Cms\Models\Base\BaseContentModel;
 
-class PostModel extends BaseContentModel
+class ActivityModel extends BaseContentModel
 {
-    protected $table = 'cms_posts';
+    protected $table = 'core_activities';
 
     public function __construct(array $attributes = array())
     {

@@ -102,7 +102,7 @@ class CreateCoreTables extends Migration
 
         });
 
-        Schema::create('core_posts', function (Blueprint $table) {
+        Schema::create('core_contents', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeBaseContentProperties($table);
 
@@ -114,6 +114,28 @@ class CreateCoreTables extends Migration
             $table->longText('text')->nullable();
             $table->string('cover')->nullable();
         });
+
+        Schema::create('core_activities', function (Blueprint $table) {
+            CoreMigrationUtils::initializeBaseModelProperties($table);
+            CoreMigrationUtils::initializeBaseContentProperties($table);
+
+            $table->text('title')->nullable();
+            $table->text('slug')->unique();
+            $table->longText('launch')->nullable();
+            $table->longText('abstract')->nullable();
+            $table->longText('body')->nullable();
+            $table->longText('text')->nullable();
+            $table->string('cover')->nullable();
+
+            $table->string('scheduling')->nullable();
+            $table->unsignedBigInteger('start_time')->nullable();
+            $table->unsignedBigInteger('end_time')->nullable();
+        });
+
+        Schema::create('core_contacts', function (Blueprint $table) {
+            CoreMigrationUtils::initializeBaseModelProperties($table);
+            $table->text('value', 256)->nullable();
+        });
     }
 
     /**
@@ -123,13 +145,13 @@ class CreateCoreTables extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('core_contacts');
         Schema::dropIfExists('core_tags');
-        Schema::dropIfExists('core_posts');
-
+        Schema::dropIfExists('core_activities');
+        Schema::dropIfExists('core_contents');
         Schema::dropIfExists('coupled_roles');
         Schema::dropIfExists('coupled_groups');
         Schema::dropIfExists('coupled_assets');
-
         Schema::dropIfExists('core_assets');
         Schema::dropIfExists('core_geo');
         Schema::dropIfExists('core_groups');

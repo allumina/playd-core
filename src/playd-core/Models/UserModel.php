@@ -2,14 +2,16 @@
 
 namespace Allumina\Playd\Core\Models;
 
+use Allumina\Playd\Core\Common\Constants;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Hash;
 use Ramsey\Uuid\Uuid;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
 use Laravel\Passport\HasApiTokens;
 
-class UserModel extends Authenticatable implements MustVerifyEmail
+class UserModel extends Authenticatable // implements MustVerifyEmail
 {
     use Notifiable, HasApiTokens;
     use EntrustUserTrait;
@@ -78,6 +80,24 @@ class UserModel extends Authenticatable implements MustVerifyEmail
         $this->locale = '';
     }
 
+    public static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($model) {
+            $model->uid = Uuid::uuid4()->toString();
+            $model->version = 1;
+            unset($model->hash);
+            $model->hash = hash(Constants::HASH_ALGORITHM, json_encode($model));
+        });
+
+        static::updating(function ($model) {
+            $model->version = $model->version + 1;
+            unset($model->hash);
+            $model->hash = hash(Constants::HASH_ALGORITHM, json_encode($model));
+        });
+    }
+
     public function assignId()
     {
         $this->uid = Uuid::uuid4()->toString();
@@ -109,5 +129,14 @@ class UserModel extends Authenticatable implements MustVerifyEmail
 
     private function rolesIdentifiers() {
         return $this->coupledIdentifiers('coupled_roles');
+    }
+
+    public function findForPassport($username) {
+        return $this->where('email', $username)->first();
+    }
+
+    public function getUserKey(string $context) {
+        $encoded = $this->identifier . '@' . env('APP_KEY') . '$' . $context;
+        return Hash::make($encoded);
     }
 }

@@ -6,6 +6,8 @@ use Allumina\Playd\Core\Common\Constants;
 
 class MigrationUtils
 {
+    const IDS_LENGTH = 512;
+
     public static function initializeBaseModelProperties(&$table)
     {
         $table->uuid('uid')->unique();
@@ -19,15 +21,15 @@ class MigrationUtils
         $table->boolean('is_deleted')->default(false);
         $table->unsignedInteger('flags')->default(0);
         $table->string('locale', 16)->default('');
-        $table->uuid('local_id')->nullable();
-        $table->uuid('owner_id')->nullable();
-        $table->uuid('user_id')->nullable();
-        $table->uuid('parent_id')->nullable();
-        $table->uuid('ancestor_id')->nullable();
-        $table->uuid('group_id')->nullable();
-        $table->uuid('external_id')->nullable();
-        $table->uuid('application_id')->nullable();
-        $table->uuid('environment_id')->nullable();
+        $table->string('local_id', self::IDS_LENGTH)->nullable();
+        $table->string('owner_id', self::IDS_LENGTH)->nullable();
+        $table->string('user_id', self::IDS_LENGTH)->nullable();
+        $table->string('parent_id', self::IDS_LENGTH)->nullable();
+        $table->string('ancestor_id', self::IDS_LENGTH)->nullable();
+        $table->string('group_id', self::IDS_LENGTH)->nullable();
+        $table->string('external_id', self::IDS_LENGTH)->nullable();
+        $table->string('application_id', self::IDS_LENGTH)->nullable();
+        $table->string('environment_id', self::IDS_LENGTH)->nullable();
         $table->unsignedInteger('version')->default(0);
         $table->timestamp('create_time')->nullable();
         $table->timestamp('update_time')->nullable();

@@ -136,6 +136,22 @@ class CreateCoreTables extends Migration
             CoreMigrationUtils::initializeBaseModelProperties($table);
             $table->text('value', 256)->nullable();
         });
+
+        Schema::create('coupled_activities', function (Blueprint $table) {
+            $table->uuid('source_identifier');
+            $table->uuid('target_identifier');
+            $table->unsignedInteger('sort_index')->default(0);
+            $table->primary(['source_identifier', 'target_identifier']);
+            $table->index('source_identifier');
+        });
+
+        Schema::create('coupled_contents', function (Blueprint $table) {
+            $table->uuid('source_identifier');
+            $table->uuid('target_identifier');
+            $table->unsignedInteger('sort_index')->default(0);
+            $table->primary(['source_identifier', 'target_identifier']);
+            $table->index('source_identifier');
+        });
     }
 
     /**
@@ -145,13 +161,15 @@ class CreateCoreTables extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('coupled_activities');
+        Schema::dropIfExists('coupled_contents');
+        Schema::dropIfExists('coupled_roles');
+        Schema::dropIfExists('coupled_groups');
+        Schema::dropIfExists('coupled_assets');
         Schema::dropIfExists('core_contacts');
         Schema::dropIfExists('core_tags');
         Schema::dropIfExists('core_activities');
         Schema::dropIfExists('core_contents');
-        Schema::dropIfExists('coupled_roles');
-        Schema::dropIfExists('coupled_groups');
-        Schema::dropIfExists('coupled_assets');
         Schema::dropIfExists('core_assets');
         Schema::dropIfExists('core_geo');
         Schema::dropIfExists('core_groups');

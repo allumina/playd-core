@@ -135,8 +135,8 @@ class UserModel extends Authenticatable // implements MustVerifyEmail
         return $this->where('email', $username)->first();
     }
 
-    public function getUserKey(string $context) {
-        $encoded = $this->identifier . '@' . env('APP_KEY') . '$' . $context;
-        return Hash::make($encoded);
-    }
+    public function getUserKey(string $context, String $category = '', String $type = '') {
+    $encoded = $this->identifier . '@' . env('APP_KEY') . '$' . $context . '$' .$category .'$' . $type;
+    return Hash::make($encoded);
+}
 }

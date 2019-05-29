@@ -281,4 +281,11 @@ abstract class BaseModel extends Model
             $this->guarded = $value;
         }
     }
+
+    public static function sanitize(string $text) {
+        $text = strtolower($text);
+        $text = preg_replace( '~([^a-z0-9\-])~i', '', $text );
+        $text = preg_replace( '~\-\-+~', '-', $text );
+        return $text;
+    }
 }

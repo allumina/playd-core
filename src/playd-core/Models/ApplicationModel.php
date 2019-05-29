@@ -9,20 +9,10 @@
 namespace Allumina\Playd\Core\Models;
 
 use Allumina\Playd\Core\Models\Base\BaseContentModel;
-use Allumina\Playd\Core\Models\Base\BaseModel;
 
-abstract class ContentCategories {
-    const CONTENT = 'content';
-}
-
-abstract class ContentTypes {
-    const GENERIC = 'generic';
-    const PRIVACY = 'privacy';
-}
-
-class ContentModel extends BaseContentModel
+class ApplicationModel extends BaseContentModel
 {
-    protected $table = 'core_contents';
+    protected $table = 'core_applications';
 
     public function __construct(array $attributes = array())
     {
@@ -32,10 +22,7 @@ class ContentModel extends BaseContentModel
     public static function initialize(
         $identifier,
         $friendly,
-        $title,
-        $launch,
-        $abstract,
-        $body,
+        $name,
         $locale = '',
         $is_visible = true,
         $is_enabled = true,
@@ -43,11 +30,7 @@ class ContentModel extends BaseContentModel
         $flags = 0
     ) {
         $instance = new self();
-
-        $instance->title = $title;
-        $instance->launch = $launch;
-        $instance->abstract = $abstract;
-        $instance->body = $body;
+        $instance->name = $name;
         $instance->identifier = $identifier;
         $instance->friendly = $friendly;
         $instance->locale = $locale;
@@ -65,12 +48,14 @@ class ContentModel extends BaseContentModel
 
         static::creating(function ($model) {
             parent::creating($model);
-            $model->slug = BaseModel::sanitize($model->title);
+            $model->slug = self::sanitize($model->title);
         });
 
         static::updating(function ($model) {
             parent::updating($model);
-            $model->slug = BaseModel::sanitize($model->title);
+            $model->slug = self::sanitize($model->title);
         });
     }
+
+
 }

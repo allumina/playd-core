@@ -24,7 +24,7 @@ class SystemController extends BaseController
     public function uuid(Request $request)
     {
         $response = new DataResponse();
-        $response->data = Uuid::uuid4();
+        $response->data = Uuid::uuid4()->toString();
         $response->status = DataResponse::OK;
         $response->error = null;
         $response->request = $request;

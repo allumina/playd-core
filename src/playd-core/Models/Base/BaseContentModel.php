@@ -1,6 +1,6 @@
 <?php
 
-namespace Allumina\Playd\Cms\Models\Base;
+namespace Allumina\Playd\Core\Models\Base;
 
 use Allumina\Playd\Core\Models\Base\BaseModel;
 

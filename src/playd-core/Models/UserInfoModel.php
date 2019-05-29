@@ -9,20 +9,22 @@
 namespace Allumina\Playd\Core\Models;
 
 use Allumina\Playd\Core\Models\Base\BaseContentModel;
-use Allumina\Playd\Core\Models\Base\BaseModel;
 
-abstract class ContentCategories {
-    const CONTENT = 'content';
-}
-
-abstract class ContentTypes {
-    const GENERIC = 'generic';
-    const PRIVACY = 'privacy';
-}
-
-class ContentModel extends BaseContentModel
+abstract class UserInfoCategories
 {
-    protected $table = 'core_contents';
+    const PROFILE = 'profile';
+}
+
+abstract class UserInfoTypes
+{
+    const GENERIC = 'generic';
+}
+
+class UserInfoModel extends BaseContentModel
+{
+    public const CONTEXT = 'userinfo';
+
+    protected $table = 'core_user_infos';
 
     public function __construct(array $attributes = array())
     {
@@ -32,22 +34,18 @@ class ContentModel extends BaseContentModel
     public static function initialize(
         $identifier,
         $friendly,
-        $title,
-        $launch,
-        $abstract,
-        $body,
+        $first_name,
+        $last_name,
         $locale = '',
         $is_visible = true,
         $is_enabled = true,
         $is_deleted = false,
         $flags = 0
-    ) {
+    )
+    {
         $instance = new self();
-
-        $instance->title = $title;
-        $instance->launch = $launch;
-        $instance->abstract = $abstract;
-        $instance->body = $body;
+        $instance->first_name = $first_name;
+        $instance->last_name = $last_name;
         $instance->identifier = $identifier;
         $instance->friendly = $friendly;
         $instance->locale = $locale;
@@ -62,15 +60,5 @@ class ContentModel extends BaseContentModel
     public static function boot()
     {
         parent::boot();
-
-        static::creating(function ($model) {
-            parent::creating($model);
-            $model->slug = BaseModel::sanitize($model->title);
-        });
-
-        static::updating(function ($model) {
-            parent::updating($model);
-            $model->slug = BaseModel::sanitize($model->title);
-        });
     }
 }

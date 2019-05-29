@@ -31,6 +31,12 @@ class CreateCoreTables extends Migration
             $table->float('longitude')->nullable();
         });
 
+        Schema::create('core_applications', function (Blueprint $table) {
+            CoreMigrationUtils::initializeBaseModelProperties($table);
+            $table->string('name', 512)->nullable();
+            $table->text('description')->nullable();
+        });
+
         Schema::create('core_groups', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             $table->string('name', 512)->nullable();
@@ -44,7 +50,6 @@ class CreateCoreTables extends Migration
 
         Schema::create('core_users', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
-            $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();
@@ -111,8 +116,12 @@ class CreateCoreTables extends Migration
             $table->longText('launch')->nullable();
             $table->longText('abstract')->nullable();
             $table->longText('body')->nullable();
-            $table->longText('text')->nullable();
             $table->string('cover')->nullable();
+            $table->string('scheduling')->nullable();
+            $table->unsignedBigInteger('start_time')->nullable();
+            $table->unsignedBigInteger('end_time')->nullable();
+            $table->float('latitude')->nullable();
+            $table->float('longitude')->nullable();
         });
 
         Schema::create('core_activities', function (Blueprint $table) {
@@ -124,12 +133,18 @@ class CreateCoreTables extends Migration
             $table->longText('launch')->nullable();
             $table->longText('abstract')->nullable();
             $table->longText('body')->nullable();
-            $table->longText('text')->nullable();
             $table->string('cover')->nullable();
-
             $table->string('scheduling')->nullable();
             $table->unsignedBigInteger('start_time')->nullable();
             $table->unsignedBigInteger('end_time')->nullable();
+            $table->float('latitude')->nullable();
+            $table->float('longitude')->nullable();
+        });
+
+        Schema::create('core_user_infos', function (Blueprint $table) {
+            CoreMigrationUtils::initializeBaseModelProperties($table);
+            $table->string('first_name')->nullable();
+            $table->string('last_name')->nullable();
         });
 
         Schema::create('core_contacts', function (Blueprint $table) {
@@ -140,6 +155,7 @@ class CreateCoreTables extends Migration
         Schema::create('coupled_activities', function (Blueprint $table) {
             $table->uuid('source_identifier');
             $table->uuid('target_identifier');
+            $table->unsignedBigInteger('time')->nullable();
             $table->unsignedInteger('sort_index')->default(0);
             $table->primary(['source_identifier', 'target_identifier']);
             $table->index('source_identifier');
@@ -148,6 +164,7 @@ class CreateCoreTables extends Migration
         Schema::create('coupled_contents', function (Blueprint $table) {
             $table->uuid('source_identifier');
             $table->uuid('target_identifier');
+            $table->unsignedBigInteger('time')->nullable();
             $table->unsignedInteger('sort_index')->default(0);
             $table->primary(['source_identifier', 'target_identifier']);
             $table->index('source_identifier');
@@ -174,8 +191,10 @@ class CreateCoreTables extends Migration
         Schema::dropIfExists('core_geo');
         Schema::dropIfExists('core_groups');
         Schema::dropIfExists('core_roles');
+        Schema::dropIfExists('core_user_infos');
         Schema::dropIfExists('core_users');
         Schema::dropIfExists('core_countries');
         Schema::dropIfExists('core_locales');
+        Schema::dropIfExists('core_applications');
     }
 }

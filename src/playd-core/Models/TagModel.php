@@ -8,7 +8,7 @@
 
 namespace Allumina\Playd\Core\Models;
 
-use Allumina\Playd\Cms\Models\Base\BaseContentModel;
+use Allumina\Playd\Core\Models\Base\BaseContentModel;
 
 class TagModel extends BaseContentModel
 {

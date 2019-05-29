@@ -57,5 +57,4 @@ class ApplicationModel extends BaseContentModel
         });
     }
 
-
 }

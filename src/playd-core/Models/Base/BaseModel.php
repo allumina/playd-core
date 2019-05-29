@@ -286,6 +286,7 @@ abstract class BaseModel extends Model
         $text = strtolower($text);
         $text = preg_replace( '~([^a-z0-9\-])~i', '', $text );
         $text = preg_replace( '~\-\-+~', '-', $text );
+        echo $text . "\n";
         return $text;
     }
 }

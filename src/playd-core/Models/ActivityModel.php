@@ -9,8 +9,9 @@
 namespace Allumina\Playd\Core\Models;
 
 use Allumina\Playd\Core\Models\Base\BaseContentModel;
+use Illuminate\Support\Facades\DB;
 
-abstract ActivityCategories
+abstract class ActivityCategories
 {
     const PLACE = 'place';
     const ACTIVITY = 'activity';
@@ -18,7 +19,7 @@ abstract ActivityCategories
     const EXCURSION = 'excursion';
 }
 
-abstract ActivityTypes
+abstract class ActivityTypes
 {
     const ACCOUNTING = 'accounting';
     const AIRPORT = 'airport';
@@ -114,6 +115,8 @@ abstract ActivityTypes
 
 class ActivityModel extends BaseContentModel
 {
+    public const CONTEXT = 'activities';
+
     protected $table = 'core_activities';
 
     public function __construct(array $attributes = array())
@@ -168,5 +171,13 @@ class ActivityModel extends BaseContentModel
             parent::updating($model);
             $model->slug = BaseModel::sanitize($model->title);
         });
+    }
+
+    public static function keysSeed()
+    {
+        return DB::table('core_activities')
+            ->select('category', 'type')
+            ->distinct()
+            ->get();
     }
 }

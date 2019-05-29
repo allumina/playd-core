@@ -10,6 +10,7 @@ namespace Allumina\Playd\Core\Models;
 
 use Allumina\Playd\Core\Models\Base\BaseContentModel;
 use Allumina\Playd\Core\Models\Base\BaseModel;
+use Illuminate\Support\Facades\DB;
 
 abstract class ContentCategories {
     const CONTENT = 'content';
@@ -22,6 +23,8 @@ abstract class ContentTypes {
 
 class ContentModel extends BaseContentModel
 {
+    public const CONTEXT = 'contents';
+
     protected $table = 'core_contents';
 
     public function __construct(array $attributes = array())
@@ -64,13 +67,19 @@ class ContentModel extends BaseContentModel
         parent::boot();
 
         static::creating(function ($model) {
-            parent::creating($model);
             $model->slug = BaseModel::sanitize($model->title);
         });
 
         static::updating(function ($model) {
-            parent::updating($model);
             $model->slug = BaseModel::sanitize($model->title);
         });
+    }
+
+    public static function keysSeed()
+    {
+        return DB::table('core_contents')
+            ->select('category', 'type')
+            ->distinct()
+            ->get();
     }
 }

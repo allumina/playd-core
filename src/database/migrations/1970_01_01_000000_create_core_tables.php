@@ -112,7 +112,7 @@ class CreateCoreTables extends Migration
             CoreMigrationUtils::initializeBaseContentProperties($table);
 
             $table->text('title')->nullable();
-            $table->text('slug')->unique();
+            $table->text('slug');
             $table->longText('launch')->nullable();
             $table->longText('abstract')->nullable();
             $table->longText('body')->nullable();
@@ -129,7 +129,7 @@ class CreateCoreTables extends Migration
             CoreMigrationUtils::initializeBaseContentProperties($table);
 
             $table->text('title')->nullable();
-            $table->text('slug')->unique();
+            $table->text('slug');
             $table->longText('launch')->nullable();
             $table->longText('abstract')->nullable();
             $table->longText('body')->nullable();

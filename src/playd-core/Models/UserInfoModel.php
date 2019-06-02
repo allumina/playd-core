@@ -15,7 +15,6 @@ abstract class UserInfoCategories
 {
     const PROFILE = 'profile';
     const ACTION = 'action';
-
 }
 
 abstract class UserInfoTypes
@@ -46,8 +45,7 @@ class UserInfoModel extends BaseContentModel
         $is_enabled = true,
         $is_deleted = false,
         $flags = 0
-    )
-    {
+    ) {
         $instance = new self();
         $instance->first_name = $first_name;
         $instance->last_name = $last_name;
@@ -74,4 +72,9 @@ class UserInfoModel extends BaseContentModel
             ->distinct()
             ->get();
     }
+}
+
+class UserInfoModelRevision extends UserInfoModel
+{
+    protected $table = 'core_user_infos_revisions';
 }

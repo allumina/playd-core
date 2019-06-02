@@ -8,7 +8,7 @@ class MigrationUtils
 {
     const IDS_LENGTH = 512;
 
-    public static function initializeBaseModelProperties(&$table)
+    public static function initializeBaseModelProperties(&$table, array $primaryKeys = ['identifier', 'locale'])
     {
         $table->uuid('uid')->unique();
         $table->uuid('identifier')->nullable();
@@ -38,15 +38,7 @@ class MigrationUtils
         $table->text('raw')->nullable();
         $table->text('acl')->nullable();
 
-        /*
-        if ($uidAsPrimary) {
-            $table->primary(['uid', 'locale']);
-        }  else {
-            $table->unique(['uid', 'locale']);
-        }
-        */
-
-        $table->primary(['identifier', 'locale']);
+        $table->primary($primaryKeys);
 
         $table->index('identifier');
         $table->index('locale');
@@ -58,13 +50,5 @@ class MigrationUtils
         $table->index('application_id');
         $table->index('environment_id');
         $table->index('external_id');
-
-        // if ($table->getTable() != 'core_locales')
-        //     $table->foreign('locale')->references('identifier')->on('core_locales');
-    }
-
-    public static function initializeBaseContentProperties(&$table)
-    {
-
     }
 }

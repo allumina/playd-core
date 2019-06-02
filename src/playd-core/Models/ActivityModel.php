@@ -137,8 +137,7 @@ class ActivityModel extends BaseContentModel
         $is_enabled = true,
         $is_deleted = false,
         $flags = 0
-    )
-    {
+    ) {
         $instance = new self();
 
         $instance->title = $title;
@@ -180,4 +179,9 @@ class ActivityModel extends BaseContentModel
             ->distinct()
             ->get();
     }
+}
+
+class ActivityModelRevision extends ActivityModel
+{
+    protected $table = 'core_activities_revisions';
 }

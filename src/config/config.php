@@ -1,7 +1,7 @@
-<?php 
+<?php
 
 return [
-    
+
     /*
     |--------------------------------------------------------------------------
     | Package Configuration Option
@@ -10,4 +10,6 @@ return [
     */
 
     'connection' => env('PLAYD_DB_CONNECTION', 'mysql'),
+
+    'theme' => env('PLAYD_THEME', 'tartan'),
 ];

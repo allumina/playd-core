@@ -12,11 +12,13 @@ use Allumina\Playd\Core\Models\Base\BaseContentModel;
 use Allumina\Playd\Core\Models\Base\BaseModel;
 use Illuminate\Support\Facades\DB;
 
-abstract class ContentCategories {
+abstract class ContentCategories
+{
     const CONTENT = 'content';
 }
 
-abstract class ContentTypes {
+abstract class ContentTypes
+{
     const GENERIC = 'generic';
     const PRIVACY = 'privacy';
 }
@@ -30,6 +32,11 @@ class ContentModel extends BaseContentModel
     public function __construct(array $attributes = array())
     {
         parent::__construct($attributes);
+    }
+
+    public function parse(array $attributes = array())
+    {
+        parent::parse($attributes);
     }
 
     public static function initialize(
@@ -77,9 +84,15 @@ class ContentModel extends BaseContentModel
 
     public static function keysSeed()
     {
+        // TO DO - Add cache
         return DB::table('core_contents')
             ->select('category', 'type')
             ->distinct()
             ->get();
     }
+}
+
+class ContentModelRevision extends ContentModel
+{
+    protected $table = 'core_contents_revisions';
 }

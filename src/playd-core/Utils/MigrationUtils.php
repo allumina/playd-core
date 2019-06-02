@@ -51,4 +51,10 @@ class MigrationUtils
         $table->index('environment_id');
         $table->index('external_id');
     }
+
+    public static function initializeBaseContentModelProperties(&$table)
+    {
+        $table->text('title')->nullable();
+        $table->text('slug');
+    }
 }

@@ -8,9 +8,9 @@
 
 namespace Allumina\Playd\Core\Models;
 
-use Allumina\Playd\Core\Models\Base\BaseModel;
+use Allumina\Playd\Core\Models\Base\BaseContentModel;
 
-class ContactModel extends BaseModel
+class ContactModel extends BaseContentModel
 {
     public const WEBSITE = 'website';
     public const PHONE = 'phone';
@@ -58,10 +58,5 @@ class ContactModel extends BaseModel
         $instance->flags = $flags;
 
         return $instance;
-    }
-
-    public static function boot()
-    {
-        parent::boot();
     }
 }

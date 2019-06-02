@@ -2,31 +2,11 @@
 
 namespace Allumina\Playd\Core\Models;
 
-use Allumina\Playd\Core\Models\Base\BaseModel;
+use Allumina\Playd\Core\Models\Base\BaseContentModel;
 
-class LocaleModel extends BaseModel
+class LocaleModel extends BaseContentModel
 {
     protected $table = 'core_locales';
-
-    /*
-    public function setNativeName($value) { $this->attributes['native_name'] = $value; }
-    public function getNativeName() { return $this->attributes['native_name']; }
-
-    public function setDislayName($value) { $this->attributes['display_name'] = $value; }
-    public function getDisplayName() { return $this->attributes['display_name']; }
-
-    public function setEnglishName($value) { $this->attributes['english_name'] = $value; }
-    public function getEnglishName() { return $this->attributes['english_name']; }
-
-    public function setNumberFormat($value) { $this->attributes['number_format'] = $value; }
-    public function getNumberFormat() { return $this->attributes['number_format']; }
-
-    public function setTwoLetterISOLanguageName($value) { $this->attributes['two_letter_iso_language_name'] = $value; }
-    public function getTwoLetterISOLanguageName() { return $this->attributes['two_letter_iso_language_name']; }
-
-    public function setThreeLetterISOLanguageName($value) { $this->attributes['three_letter_iso_language_name'] = $value; }
-    public function getThreeLetterISOLanguageName() { return $this->attributes['three_letter_iso_language_name']; }
-    */
 
     public function __construct(array $attributes = array())
     {
@@ -45,8 +25,7 @@ class LocaleModel extends BaseModel
         $is_enabled = true,
         $is_deleted = false,
         $flags = 0
-    )
-    {
+    ) {
         $instance = new self();
         $instance->identifier = $identifier;
         $instance->friendly = $friendly;
@@ -60,10 +39,5 @@ class LocaleModel extends BaseModel
         $instance->is_deleted = $is_deleted;
         $instance->flags = $flags;
         return $instance;
-    }
-
-    public static function boot()
-    {
-        parent::boot();
     }
 }

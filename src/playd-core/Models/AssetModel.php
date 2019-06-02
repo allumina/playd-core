@@ -8,9 +8,9 @@
 
 namespace Allumina\Playd\Core\Models;
 
-use Allumina\Playd\Core\Models\Base\BaseModel;
+use Allumina\Playd\Core\Models\Base\BaseContentModel;
 
-class AssetModel extends BaseModel
+class AssetModel extends BaseContentModel
 {
     public const IMAGE = 'image';
     public const VIDEO = 'video';
@@ -21,11 +21,6 @@ class AssetModel extends BaseModel
     public const DOCUMENTS_PATH = 'documents';
 
     protected $table = 'core_assets';
-
-    /*
-    public function setOriginalFilenameAttribute($value) { $this->attributes['original_filename'] = $value; }
-    public function getOrifinalFilenameAttribute() { return $this->attributes['original_filename']; }
-    */
 
     public function __construct(array $attributes = array())
     {
@@ -67,10 +62,5 @@ class AssetModel extends BaseModel
         $instance->flags = $flags;
 
         return $instance;
-    }
-
-    public static function boot()
-    {
-        parent::boot();
     }
 }

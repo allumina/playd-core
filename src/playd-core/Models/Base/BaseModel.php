@@ -190,7 +190,7 @@ abstract class BaseModel extends Model
         */
     }
 
-    public function parse(array $attributes = array())
+    public function parse(string $class, array $attributes = array(), $owner = null)
     {
         if (isset($attributes['uid']))
             $this->uid = $attributes['uid'];
@@ -212,7 +212,13 @@ abstract class BaseModel extends Model
             $this->locale = '';
 
         if (isset($attributes['local_id'])) $this->local_id = $attributes['local_id'];
-        if (isset($attributes['owner_id'])) $this->owner_id = $attributes['owner_id'];
+
+        if ($owner != null) {
+            if (isset($attributes['owner_id'])) $this->owner_id = $owner->getKey($class::CONTEXT, $this->category, $this->key);
+        } else {
+            if (isset($attributes['owner_id'])) $this->owner_id = $attributes['owner_id'];
+        }
+
         if (isset($attributes['user_id'])) $this->user_id = $attributes['user_id'];
         if (isset($attributes['parent_id'])) $this->parent_id = $attributes['parent_id'];
         if (isset($attributes['ancestor_id'])) $this->ancestor_id = $attributes['ancestor_id'];
@@ -355,6 +361,7 @@ abstract class BaseModel extends Model
         }
     }
 
+    /*
     public static function sanitize(string $text)
     {
         $text = strtolower($text);
@@ -363,4 +370,5 @@ abstract class BaseModel extends Model
         echo $text . "\n";
         return $text;
     }
+    */
 }

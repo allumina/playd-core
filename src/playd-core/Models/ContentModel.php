@@ -34,9 +34,9 @@ class ContentModel extends BaseContentModel
         parent::__construct($attributes);
     }
 
-    public function parse(array $attributes = array())
+    public function parse(string $class,  array $attributes = array(), $owner = null)
     {
-        parent::parse($attributes);
+        parent::parse($class, $attributes, $owner);
     }
 
     public static function initialize(
@@ -67,19 +67,6 @@ class ContentModel extends BaseContentModel
         $instance->flags = $flags;
 
         return $instance;
-    }
-
-    public static function boot()
-    {
-        parent::boot();
-
-        static::creating(function ($model) {
-            $model->slug = BaseModel::sanitize($model->title);
-        });
-
-        static::updating(function ($model) {
-            $model->slug = BaseModel::sanitize($model->title);
-        });
     }
 
     public static function keysSeed()

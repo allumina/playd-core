@@ -41,20 +41,4 @@ class ApplicationModel extends BaseContentModel
 
         return $instance;
     }
-
-    public static function boot()
-    {
-        parent::boot();
-
-        static::creating(function ($model) {
-            parent::creating($model);
-            $model->slug = self::sanitize($model->title);
-        });
-
-        static::updating(function ($model) {
-            parent::updating($model);
-            $model->slug = self::sanitize($model->title);
-        });
-    }
-
 }

@@ -157,21 +157,6 @@ class ActivityModel extends BaseContentModel
         return $instance;
     }
 
-    public static function boot()
-    {
-        parent::boot();
-
-        static::creating(function ($model) {
-            parent::creating($model);
-            $model->slug = BaseModel::sanitize($model->title);
-        });
-
-        static::updating(function ($model) {
-            parent::updating($model);
-            $model->slug = BaseModel::sanitize($model->title);
-        });
-    }
-
     public static function keysSeed()
     {
         return DB::table('core_activities')

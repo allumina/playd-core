@@ -8,10 +8,10 @@
 
 namespace Allumina\Playd\Core\Models;
 
-use Allumina\Playd\Core\Models\Base\BaseModel;
+use Allumina\Playd\Core\Models\Base\BaseContentModel;
 use Ramsey\Uuid\Uuid;
 
-class CountryModel extends BaseModel
+class CountryModel extends BaseContentModel
 {
     protected $table = 'core_countries';
 
@@ -30,8 +30,7 @@ class CountryModel extends BaseModel
         $is_enabled = true,
         $is_deleted = false,
         $flags = 0
-    )
-    {
+    ) {
         $instance = new self();
 
         $instance->name = $name;

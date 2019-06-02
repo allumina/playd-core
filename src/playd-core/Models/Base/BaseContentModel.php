@@ -14,8 +14,8 @@ abstract class BaseContentModel extends BaseModel
         parent::__construct($attributes);
     }
 
-    public function parse(array $attributes = array())
+    public function parse(string $class, array $attributes = array(), $owner = null)
     {
-        parent::parse($attributes);
+        parent::parse($class, $attributes, $owner);
     }
 }

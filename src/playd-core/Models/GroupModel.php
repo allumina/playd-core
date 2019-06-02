@@ -1,16 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: gesposito
- * Date: 09/03/19
- * Time: 12:08
- */
 
 namespace Allumina\Playd\Core\Models;
 
-use Allumina\Playd\Core\Models\Base\BaseModel;
+use Allumina\Playd\Core\Models\Base\BaseContentModel;
 
-class GroupModel extends BaseModel
+class GroupModel extends BaseContentModel
 {
     protected $table = 'core_groups';
 
@@ -48,10 +42,5 @@ class GroupModel extends BaseModel
         $instance->flags = $flags;
 
         return $instance;
-    }
-
-    public static function boot()
-    {
-        parent::boot();
     }
 }

@@ -14,35 +14,6 @@ class CreateCoreTables extends Migration
      */
     public function up()
     {
-        Schema::create('core_locales', function (Blueprint $table) {
-            CoreMigrationUtils::initializeBaseModelProperties($table);
-            $table->string('native_name', 256)->nullable();
-            $table->string('display_name', 256)->nullable();
-            $table->string('english_name', 256)->nullable();
-            $table->string('number_format', 256)->nullable();
-            $table->string('two_letter_iso_language_name', 8)->nullable();
-            $table->string('three_letter_iso_language_name', 8)->nullable();
-        });
-
-        Schema::create('core_countries', function (Blueprint $table) {
-            CoreMigrationUtils::initializeBaseModelProperties($table);
-            $table->string('name', 256)->nullable();
-            $table->float('latitude')->nullable();
-            $table->float('longitude')->nullable();
-        });
-
-        Schema::create('core_applications', function (Blueprint $table) {
-            CoreMigrationUtils::initializeBaseModelProperties($table);
-            $table->string('name', 512)->nullable();
-            $table->text('description')->nullable();
-        });
-
-        Schema::create('core_groups', function (Blueprint $table) {
-            CoreMigrationUtils::initializeBaseModelProperties($table);
-            $table->string('name', 512)->nullable();
-            $table->text('description')->nullable();
-        });
-
         Schema::create('core_roles', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             $table->text('description')->nullable();
@@ -55,8 +26,42 @@ class CreateCoreTables extends Migration
             $table->rememberToken();
         });
 
+        Schema::create('core_locales', function (Blueprint $table) {
+            CoreMigrationUtils::initializeBaseModelProperties($table);
+            CoreMigrationUtils::initializeBaseContentModelProperties($table);
+            $table->string('native_name', 256)->nullable();
+            $table->string('display_name', 256)->nullable();
+            $table->string('english_name', 256)->nullable();
+            $table->string('number_format', 256)->nullable();
+            $table->string('two_letter_iso_language_name', 8)->nullable();
+            $table->string('three_letter_iso_language_name', 8)->nullable();
+        });
+
+        Schema::create('core_countries', function (Blueprint $table) {
+            CoreMigrationUtils::initializeBaseModelProperties($table);
+            CoreMigrationUtils::initializeBaseContentModelProperties($table);
+            $table->string('name', 256)->nullable();
+            $table->float('latitude')->nullable();
+            $table->float('longitude')->nullable();
+        });
+
+        Schema::create('core_applications', function (Blueprint $table) {
+            CoreMigrationUtils::initializeBaseModelProperties($table);
+            CoreMigrationUtils::initializeBaseContentModelProperties($table);
+            $table->string('name', 512)->nullable();
+            $table->text('description')->nullable();
+        });
+
+        Schema::create('core_groups', function (Blueprint $table) {
+            CoreMigrationUtils::initializeBaseModelProperties($table);
+            CoreMigrationUtils::initializeBaseContentModelProperties($table);
+            $table->string('name', 512)->nullable();
+            $table->text('description')->nullable();
+        });
+
         Schema::create('core_assets', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
+            CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->string('filename', 512)->nullable();
             $table->string('original_filename', 512)->nullable();
             $table->unsignedInteger('filesize')->nullable();
@@ -66,62 +71,18 @@ class CreateCoreTables extends Migration
 
         Schema::create('core_geo', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
+            CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->string('address', 512)->nullable();
             $table->string('city', 256)->nullable();
             $table->string('district', 256)->nullable();
             $table->string('postal_code', 32)->nullable();
             $table->string('country', 16)->nullable();
-            $table->float('latitude')->nullable();
-            $table->float('longitude')->nullable();
             $table->string('region', 256)->nullable();
             $table->string('zone', 256)->nullable();
         });
 
-        Schema::create('coupled_roles', function (Blueprint $table) {
-            $table->uuid('source_identifier');
-            $table->uuid('target_identifier');
-            $table->unsignedInteger('sort_index')->default(0);
-            $table->primary(['source_identifier', 'target_identifier']);
-            $table->index('source_identifier');
-        });
-
-        Schema::create('coupled_groups', function (Blueprint $table) {
-            $table->uuid('source_identifier');
-            $table->uuid('target_identifier');
-            $table->unsignedInteger('sort_index')->default(0);
-            $table->primary(['source_identifier', 'target_identifier']);
-            $table->index('source_identifier');
-        });
-
-        Schema::create('coupled_assets', function (Blueprint $table) {
-            $table->uuid('source_identifier');
-            $table->uuid('target_identifier');
-            $table->unsignedInteger('sort_index')->default(0);
-            $table->primary(['source_identifier', 'target_identifier']);
-            $table->index('source_identifier');
-        });
-
-        Schema::create('core_tags', function (Blueprint $table) {
-            CoreMigrationUtils::initializeBaseModelProperties($table);
-        });
-
         Schema::create('core_contents', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
-            $table->text('title')->nullable();
-            $table->text('slug');
-            $table->longText('launch')->nullable();
-            $table->longText('abstract')->nullable();
-            $table->longText('body')->nullable();
-            $table->string('cover')->nullable();
-            $table->string('scheduling')->nullable();
-            $table->unsignedBigInteger('start_time')->nullable();
-            $table->unsignedBigInteger('end_time')->nullable();
-            $table->float('latitude')->nullable();
-            $table->float('longitude')->nullable();
-        });
-
-        Schema::create('core_contents_revisions', function (Blueprint $table) {
-            CoreMigrationUtils::initializeBaseModelProperties($table, ['uid']);
             $table->text('title')->nullable();
             $table->text('slug');
             $table->longText('launch')->nullable();
@@ -150,36 +111,23 @@ class CreateCoreTables extends Migration
             $table->float('longitude')->nullable();
         });
 
-        Schema::create('core_activities_revisions', function (Blueprint $table) {
-            CoreMigrationUtils::initializeBaseModelProperties($table, ['uid']);
-            $table->text('title')->nullable();
-            $table->text('slug');
-            $table->longText('launch')->nullable();
-            $table->longText('abstract')->nullable();
-            $table->longText('body')->nullable();
-            $table->string('cover')->nullable();
-            $table->string('scheduling')->nullable();
-            $table->unsignedBigInteger('start_time')->nullable();
-            $table->unsignedBigInteger('end_time')->nullable();
-            $table->float('latitude')->nullable();
-            $table->float('longitude')->nullable();
-        });
-
         Schema::create('core_user_infos', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
-            $table->string('first_name')->nullable();
-            $table->string('last_name')->nullable();
-        });
-
-        Schema::create('core_user_infos_revisions', function (Blueprint $table) {
-            CoreMigrationUtils::initializeBaseModelProperties($table, ['uid']);
+            CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
         });
 
         Schema::create('core_contacts', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
+            CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->text('value', 256)->nullable();
+        });
+
+        Schema::create('core_revisions', function (Blueprint $table) {
+            CoreMigrationUtils::initializeBaseModelProperties($table);
+            CoreMigrationUtils::initializeBaseContentModelProperties($table);
+            $table->string('model');
         });
 
         Schema::create('coupled_activities', function (Blueprint $table) {
@@ -199,6 +147,30 @@ class CreateCoreTables extends Migration
             $table->primary(['source_identifier', 'target_identifier']);
             $table->index('source_identifier');
         });
+
+        Schema::create('coupled_roles', function (Blueprint $table) {
+            $table->uuid('source_identifier');
+            $table->uuid('target_identifier');
+            $table->unsignedInteger('sort_index')->default(0);
+            $table->primary(['source_identifier', 'target_identifier']);
+            $table->index('source_identifier');
+        });
+
+        Schema::create('coupled_groups', function (Blueprint $table) {
+            $table->uuid('source_identifier');
+            $table->uuid('target_identifier');
+            $table->unsignedInteger('sort_index')->default(0);
+            $table->primary(['source_identifier', 'target_identifier']);
+            $table->index('source_identifier');
+        });
+
+        Schema::create('coupled_assets', function (Blueprint $table) {
+            $table->uuid('source_identifier');
+            $table->uuid('target_identifier');
+            $table->unsignedInteger('sort_index')->default(0);
+            $table->primary(['source_identifier', 'target_identifier']);
+            $table->index('source_identifier');
+        });
     }
 
     /**
@@ -213,17 +185,14 @@ class CreateCoreTables extends Migration
         Schema::dropIfExists('coupled_roles');
         Schema::dropIfExists('coupled_groups');
         Schema::dropIfExists('coupled_assets');
+        Schema::dropIfExists('core_revisions');
         Schema::dropIfExists('core_contacts');
-        Schema::dropIfExists('core_tags');
-        Schema::dropIfExists('core_activities_revisions');
         Schema::dropIfExists('core_activities');
-        Schema::dropIfExists('core_contents_revisions');
         Schema::dropIfExists('core_contents');
         Schema::dropIfExists('core_assets');
         Schema::dropIfExists('core_geo');
         Schema::dropIfExists('core_groups');
         Schema::dropIfExists('core_roles');
-        Schema::dropIfExists('core_user_infos_revisions');
         Schema::dropIfExists('core_user_infos');
         Schema::dropIfExists('core_users');
         Schema::dropIfExists('core_countries');

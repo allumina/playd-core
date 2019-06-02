@@ -2,9 +2,9 @@
 
 namespace Allumina\Playd\Core\Models;
 
-use Allumina\Playd\Core\Models\Base\BaseModel;
+use Allumina\Playd\Core\Models\Base\BaseContentModel;
 
-class GeoModel extends BaseModel
+class GeoModel extends BaseContentModel
 {
     protected $table = 'core_geo';
 
@@ -27,8 +27,7 @@ class GeoModel extends BaseModel
         $is_enabled = true,
         $is_deleted = false,
         $flags = 0
-    )
-    {
+    ) {
         $instance = new self();
 
         $instance->address = $address;
@@ -47,10 +46,5 @@ class GeoModel extends BaseModel
         $instance->flags = $flags;
 
         return $instance;
-    }
-
-    public static function boot()
-    {
-        parent::boot();
     }
 }

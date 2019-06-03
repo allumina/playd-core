@@ -76,58 +76,9 @@ abstract class BaseModel extends Model
     protected $hidden = [
         'hash',
         'raw',
-        'acl',
-        'owner_id',
-        'user_id',
-        'parent_id',
-        'ancestor_id',
-        'group_id',
-        'external_id',
-        'application_id',
-        'environment_id',
+        'acl'
     ];
 
-    /*
-    public function setSortIndexAttribute($value) { $this->attributes['sort_index'] = $value; }
-    public function getSortIndexAttribute() { return $this->attributes['sort_index']; }
-
-    public function setIsVisibleAttribute($value) { $this->attributes['is_visible'] = $value; }
-    public function getIsVisibleAttribute() { return $this->attributes['is_visible']; }
-
-    public function setIsEnabledAttribute($value) { $this->attributes['is_enabled'] = $value; }
-    public function getIsEnabledAttribute() { return $this->attributes['is_enabled']; }
-
-    public function setIsDeletedAttribute($value) { $this->attributes['is_deleted'] = $value; }
-    public function getIsDeletedAttribute() { return $this->attributes['is_deleted']; }
-
-    public function setLocalIdAttribute($value) { $this->attributes['local_id'] = $value; }
-    public function getLocalIdAttribute() { return $this->attributes['local_id']; }
-
-    public function setOwnerIdAttribute($value) { $this->attributes['owner_id'] = $value; }
-    public function getOwnerIdAttribute() { return $this->attributes['owner_id']; }
-
-    public function setUserIdAttribute($value) { $this->attributes['user_id'] = $value; }
-    public function getUserIdAttribute() { return $this->attributes['user_id']; }
-
-    public function setParentIdAttribute($value) { $this->attributes['parent_id'] = $value; }
-    public function getParentIdAttribute() { return $this->attributes['parent_id']; }
-
-    public function setAncestorIdAttribute($value) { $this->attributes['ancestor_id'] = $value; }
-    public function getAncestorIdAttribute() { return $this->attributes['ancestor_id']; }
-
-    public function setGroupIdAttribute($value) { $this->attributes['group_id'] = $value; }
-    public function getGroupIdAttribute() { return $this->attributes['group_id']; }
-
-    public function setExternalIdAttribute($value) { $this->attributes['external_id'] = $value; }
-    public function getExternalIdAttribute() { return $this->attributes['external_id']; }
-
-    public function setApplicationIdAttribute($value) { $this->attributes['application_id'] = $value; }
-    public function getApplicationIdAttribute() { return $this->attributes['application_id']; }
-
-    public function setEnvironmentIdAttribute($value) { $this->attributes['environment_id'] = $value; }
-    public function getEnvironmentIdAttribute() { return $this->attributes['environment_id']; }
-    */
-    // public function setCreateTimeAttribute($value) { $this->attributes['create_time'] = $value; }
     public function getCreateTimeAttribute()
     {
         return ($this->attributes['create_time'] != null) ? strtotime($this->attributes['create_time']) : null;

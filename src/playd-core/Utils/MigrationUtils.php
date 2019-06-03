@@ -57,4 +57,19 @@ class MigrationUtils
         $table->text('title')->nullable();
         $table->text('slug');
     }
+
+    public static function initializeGenericContentModelProperties(&$table)
+    {
+        $table->text('title')->nullable();
+        $table->text('slug');
+        $table->longText('launch')->nullable();
+        $table->longText('abstract')->nullable();
+        $table->longText('body')->nullable();
+        $table->string('cover')->nullable();
+        $table->string('scheduling')->nullable();
+        $table->unsignedBigInteger('start_time')->default(0);
+        $table->unsignedBigInteger('end_time')->default(2147483648);
+        $table->float('latitude')->nullable();
+        $table->float('longitude')->nullable();
+    }
 }

@@ -20,7 +20,7 @@ abstract class ContentCategories
 abstract class ContentTypes
 {
     const GENERIC = 'generic';
-    const PRIVACY = 'privacy';
+    const INFO = 'info';
 }
 
 class ContentModel extends BaseContentModel

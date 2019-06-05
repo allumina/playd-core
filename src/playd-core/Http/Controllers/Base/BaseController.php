@@ -30,13 +30,15 @@ class BaseController extends BaseIlluminateController
 
         if ($user && strlen($user->identifier) > 0) {
             $query = $query->where(function ($query) use ($class, $user, $includeTemplates, $category, $type) {
+
                 if ($includeTemplates)
-                    $query->where('owner_id', '=', '');
+                    $query->whereNull('owner_id');
                 else
-                    $query->where('owner_id', '<>', '');
+                    $query->whereNotNull('owner_id');
+
                 $keys = $class::keysSeed();
                 foreach ($keys as $key) {
-                    $query->orWhere('owner_id', '=', $user->getKey($class::CONTEXT, $category, $type));
+                    $query->orWhere('owner_id', '=', $user->getUserKey($class::CONTEXT, $key->category, $key->type));
                 }
             });
         }
@@ -54,7 +56,10 @@ class BaseController extends BaseIlluminateController
         }
 
         if ($request->has('locale') && strlen($request->get('locale')) > 0) {
-            $query = $query->where('locale', '=', $request->get('locale'));
+            $query = $query->where(function ($query) use ($request) {
+                $query = $query->where('locale', '=', $request->get('locale'));
+                $query = $query->orWhere('locale', '=', '');
+            });
         }
 
         if ($request->has('lastUpdateTime') && intval($request->get('lastUpdateTime')) > 0) {

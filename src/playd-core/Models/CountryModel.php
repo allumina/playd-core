@@ -13,6 +13,8 @@ use Ramsey\Uuid\Uuid;
 
 class CountryModel extends BaseContentModel
 {
+    public const CONTEXT = 'country';
+
     protected $table = 'core_countries';
 
     public function __construct(array $attributes = array())

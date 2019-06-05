@@ -115,7 +115,7 @@ abstract class ActivityTypes
 
 class ActivityModel extends BaseContentModel
 {
-    public const CONTEXT = 'activities';
+    public const CONTEXT = 'activity';
 
     protected $table = 'core_activities';
 

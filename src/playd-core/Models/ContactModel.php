@@ -12,6 +12,8 @@ use Allumina\Playd\Core\Models\Base\BaseContentModel;
 
 class ContactModel extends BaseContentModel
 {
+    public const CONTEXT = 'contact';
+
     public const WEBSITE = 'website';
     public const PHONE = 'phone';
     public const INFO = 'info';

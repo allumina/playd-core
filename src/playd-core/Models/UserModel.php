@@ -17,6 +17,8 @@ class UserModel extends Authenticatable // implements MustVerifyEmail
     use Notifiable, HasApiTokens;
     use EntrustUserTrait;
 
+    public const CONTEXT = 'user';
+
     public const IMAGES_PATH = 'users';
 
     /**
@@ -171,10 +173,13 @@ class UserModel extends Authenticatable // implements MustVerifyEmail
         return $this->where('email', $username)->first();
     }
 
-    public function getUserKey(string $context, String $category = '', String $type = '')
+    public function getUserKey(string $context, String $category = null, String $type = null)
     {
-        $encoded = $this->identifier . '@' . env('APP_KEY') . '$' . $context . '$' . $category . '$' . $type;
-        return Hash::make($encoded);
+        $category_check = ($category && strlen($category) > 0) ? $category : '';
+        $type_check = ($type && strlen($type) > 0) ? $type : '';
+        $encoded = $this->identifier . '@' . env('APP_KEY') . '$' . $context . '$' . $category_check . '$' . $type_check;
+        // return Hash::make($encoded);
+        return hash('sha512', $encoded);
     }
 
     public static function getGenericImage()

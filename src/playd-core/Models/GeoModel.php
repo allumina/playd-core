@@ -6,6 +6,8 @@ use Allumina\Playd\Core\Models\Base\BaseContentModel;
 
 class GeoModel extends BaseContentModel
 {
+    public const CONTEXT = 'geo';
+
     protected $table = 'core_geo';
 
     public function __construct(array $attributes = array())

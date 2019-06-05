@@ -14,6 +14,8 @@ class RoleModel extends BaseModel
 {
     protected $table = 'core_roles';
 
+    public const CONTEXT = 'role';
+
     public function __construct(array $attributes = array())
     {
         parent::__construct($attributes);

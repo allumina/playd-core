@@ -12,6 +12,8 @@ use Allumina\Playd\Core\Models\Base\BaseContentModel;
 
 class ApplicationModel extends BaseContentModel
 {
+    public const CONTEXT = 'application';
+
     protected $table = 'core_applications';
 
     public function __construct(array $attributes = array())

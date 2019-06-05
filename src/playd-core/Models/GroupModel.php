@@ -6,6 +6,8 @@ use Allumina\Playd\Core\Models\Base\BaseContentModel;
 
 class GroupModel extends BaseContentModel
 {
+    public const CONTEXT = 'group';
+
     protected $table = 'core_groups';
 
     public function __construct(array $attributes = array())

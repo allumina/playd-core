@@ -25,7 +25,7 @@ abstract class ContentTypes
 
 class ContentModel extends BaseContentModel
 {
-    public const CONTEXT = 'contents';
+    public const CONTEXT = 'content';
 
     protected $table = 'core_contents';
 

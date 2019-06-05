@@ -9,7 +9,6 @@
 namespace Allumina\Playd\Core\Models;
 
 use Allumina\Playd\Core\Models\Base\BaseContentModel;
-use Illuminate\Support\Facades\DB;
 
 abstract class UserInfoCategories
 {
@@ -63,14 +62,6 @@ class UserInfoModel extends BaseContentModel
     public static function boot()
     {
         parent::boot();
-    }
-
-    public static function keysSeed()
-    {
-        return DB::table('core_user_infos')
-            ->select('category', 'type')
-            ->distinct()
-            ->get();
     }
 }
 

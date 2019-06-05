@@ -12,6 +12,8 @@ use Allumina\Playd\Core\Models\Base\BaseContentModel;
 
 class AssetModel extends BaseContentModel
 {
+    public const CONTEXT = 'asset';
+
     public const IMAGE = 'image';
     public const VIDEO = 'video';
     public const DOCUMENT = 'document';

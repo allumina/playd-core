@@ -6,6 +6,8 @@ use Allumina\Playd\Core\Models\Base\BaseContentModel;
 
 class LocaleModel extends BaseContentModel
 {
+    public const CONTEXT = 'locale';
+
     protected $table = 'core_locales';
 
     public function __construct(array $attributes = array())

@@ -312,6 +312,14 @@ abstract class BaseModel extends Model
         }
     }
 
+    public static function keysSeed()
+    {
+        $output = self::select('category', 'type')
+            ->distinct()
+            ->get();
+        return $output;
+    }
+
     /*
     public static function sanitize(string $text)
     {

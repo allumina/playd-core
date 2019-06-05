@@ -10,11 +10,14 @@ use Illuminate\Support\Facades\Hash;
 use Ramsey\Uuid\Uuid;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
 use Laravel\Passport\HasApiTokens;
+use Illuminate\Support\Facades\Storage;
 
 class UserModel extends Authenticatable // implements MustVerifyEmail
 {
     use Notifiable, HasApiTokens;
     use EntrustUserTrait;
+
+    public const IMAGES_PATH = 'users';
 
     /**
      * The name of the "created at" column.
@@ -70,7 +73,35 @@ class UserModel extends Authenticatable // implements MustVerifyEmail
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'uid',
+        'friendly',
+        'type',
+        'category',
+        'sort_index',
+        'is_visible',
+        'is_enabled',
+        'is_deleted',
+        'flags',
+        'locale',
+        'local_id',
+        'owner_id',
+        'user_id',
+        'parent_id',
+        'ancestor_id',
+        'group_id',
+        'external_id',
+        'application_id',
+        'environment_id',
+        'version',
+        'create_time',
+        'update_time',
+        'update_time',
+        'delete_time',
+        'hash',
+        'raw',
+        'acl',
+        'remember_token',
+        'password'
     ];
 
     public function __construct(array $attributes = array())
@@ -115,28 +146,39 @@ class UserModel extends Authenticatable // implements MustVerifyEmail
         return $this->coupled(RoleModel::class, 'core_roles', 'coupled_roles');
     }
 
-    public function addRole(RoleModel $item, int $sortIndex = 0) {
+    public function addRole(RoleModel $item, int $sortIndex = 0)
+    {
         return $this->addCoupled('coupled_roles', $item->identifier, $sortIndex);
     }
 
-    public function removeGroup(RoleModel $item) {
+    public function removeGroup(RoleModel $item)
+    {
         return $this->removeCoupled('coupled_roles', $item->identifier);
     }
 
-    public function clearGroups() {
+    public function clearGroups()
+    {
         return $this->clearCoupled('coupled_roles');
     }
 
-    private function rolesIdentifiers() {
+    private function rolesIdentifiers()
+    {
         return $this->coupledIdentifiers('coupled_roles');
     }
 
-    public function findForPassport($username) {
+    public function findForPassport($username)
+    {
         return $this->where('email', $username)->first();
     }
 
-    public function getUserKey(string $context, String $category = '', String $type = '') {
-    $encoded = $this->identifier . '@' . env('APP_KEY') . '$' . $context . '$' .$category .'$' . $type;
-    return Hash::make($encoded);
-}
+    public function getUserKey(string $context, String $category = '', String $type = '')
+    {
+        $encoded = $this->identifier . '@' . env('APP_KEY') . '$' . $context . '$' . $category . '$' . $type;
+        return Hash::make($encoded);
+    }
+
+    public static function getGenericImage()
+    {
+        return Storage::path(UserModel::IMAGES_PATH . '/' . 'generic.png');
+    }
 }

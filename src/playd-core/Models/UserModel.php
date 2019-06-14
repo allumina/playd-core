@@ -11,6 +11,7 @@ use Ramsey\Uuid\Uuid;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
 use Laravel\Passport\HasApiTokens;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Crypt;
 
 class UserModel extends Authenticatable // implements MustVerifyEmail
 {
@@ -177,9 +178,15 @@ class UserModel extends Authenticatable // implements MustVerifyEmail
     {
         $category_check = ($category && strlen($category) > 0) ? $category : '';
         $type_check = ($type && strlen($type) > 0) ? $type : '';
-        $encoded = $this->identifier . '@' . env('APP_KEY') . '$' . $context . '$' . $category_check . '$' . $type_check;
+        $encoded = $this->identifier . '@' . config('app.key') . '$' . $context . '$' . $category_check . '$' . $type_check;
         // return Hash::make($encoded);
-        return hash('sha512', $encoded);
+        // return hash('sha256', $encoded);
+        // return password_hash($encoded, PASSWORD_BCRYPT, ['cost' => 12, 'salt' => config('app.key')]);
+        // return Crypt::encrypt($encoded);
+
+        // $iv = mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC), MCRYPT_DEV_URANDOM);
+        return base64_encode($encoded);
+        // TO DO : find a better way!
     }
 
     public static function getGenericImage()

@@ -26,6 +26,12 @@ class CreateCoreTables extends Migration
             $table->rememberToken();
         });
 
+        Schema::create('core_password_resets', function (Blueprint $table) {
+            CoreMigrationUtils::initializeBaseModelProperties($table);
+            $table->string('email')->index();
+            $table->string('token');
+        });
+
         Schema::create('core_locales', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeBaseContentModelProperties($table);

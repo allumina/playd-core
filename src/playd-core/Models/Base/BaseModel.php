@@ -75,7 +75,6 @@ abstract class BaseModel extends Model
 
     protected $hidden = [
         'hash',
-        'raw',
         'acl'
     ];
 

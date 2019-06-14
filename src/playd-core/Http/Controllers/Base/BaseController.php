@@ -33,8 +33,8 @@ class BaseController extends BaseIlluminateController
 
                 if ($includeTemplates)
                     $query->whereNull('owner_id');
-                else
-                    $query->whereNotNull('owner_id');
+                // else
+                //     $query->whereNotNull('owner_id');
 
                 $keys = $class::keysSeed();
                 foreach ($keys as $key) {
@@ -62,6 +62,15 @@ class BaseController extends BaseIlluminateController
             });
         }
 
+        if ($request->has('externalId') && strlen($request->get('externalId')) > 0) {
+            $query = $query->where(function ($query) use ($request) {
+                $query = $query->whereNull('external_id');
+                $query = $query->orWhere('external_id', '=', $request->get('externalId'));
+            });
+        } else {
+            $query = $query->whereNull('external_id');
+        }
+
         if ($request->has('lastUpdateTime') && intval($request->get('lastUpdateTime')) > 0) {
             $query = $query->where('update_time', '>', date('c', intval($request->get('lastUpdateTime'))));
         }
@@ -75,8 +84,6 @@ class BaseController extends BaseIlluminateController
         } else {
             $query = $query->orderBy($orderBy, $orderMode);
         }
-
-        // dd($query->toSql());
     }
 
     /*

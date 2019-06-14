@@ -33,7 +33,9 @@ abstract class BaseModel extends Model
      */
     const DELETED_AT = 'delete_time';
 
+    protected $connection = 'data';
     protected $primaryKey = 'identifier';
+
 
     public $timestamps = true;
 

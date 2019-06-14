@@ -9,6 +9,8 @@ abstract class BaseContentModel extends BaseModel
 {
     use SluggableModel;
 
+    protected $connection = 'data';
+
     public function __construct(array $attributes = array())
     {
         parent::__construct($attributes);

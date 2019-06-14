@@ -14,25 +14,25 @@ class CreateCoreTables extends Migration
      */
     public function up()
     {
-        Schema::create('core_roles', function (Blueprint $table) {
+        Schema::connection('data')->create('core_roles', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             $table->text('description')->nullable();
         });
 
-        Schema::create('core_users', function (Blueprint $table) {
+        Schema::connection('data')->create('core_users', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();
         });
 
-        Schema::create('core_password_resets', function (Blueprint $table) {
+        Schema::connection('data')->create('core_password_resets', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             $table->string('email')->index();
             $table->string('token');
         });
 
-        Schema::create('core_locales', function (Blueprint $table) {
+        Schema::connection('data')->create('core_locales', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->string('native_name', 256)->nullable();
@@ -43,7 +43,7 @@ class CreateCoreTables extends Migration
             $table->string('three_letter_iso_language_name', 8)->nullable();
         });
 
-        Schema::create('core_countries', function (Blueprint $table) {
+        Schema::connection('data')->create('core_countries', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->string('name', 256)->nullable();
@@ -51,21 +51,21 @@ class CreateCoreTables extends Migration
             $table->float('longitude')->nullable();
         });
 
-        Schema::create('core_applications', function (Blueprint $table) {
+        Schema::connection('data')->create('core_applications', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->string('name', 512)->nullable();
             $table->text('description')->nullable();
         });
 
-        Schema::create('core_groups', function (Blueprint $table) {
+        Schema::connection('data')->create('core_groups', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->string('name', 512)->nullable();
             $table->text('description')->nullable();
         });
 
-        Schema::create('core_assets', function (Blueprint $table) {
+        Schema::connection('data')->create('core_assets', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->string('filename', 512)->nullable();
@@ -75,7 +75,7 @@ class CreateCoreTables extends Migration
             $table->string('mime', 64)->nullable();
         });
 
-        Schema::create('core_geo', function (Blueprint $table) {
+        Schema::connection('data')->create('core_geo', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->string('address', 512)->nullable();
@@ -87,30 +87,30 @@ class CreateCoreTables extends Migration
             $table->string('zone', 256)->nullable();
         });
 
-        Schema::create('core_contents', function (Blueprint $table) {
+        Schema::connection('data')->create('core_contents', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeGenericContentModelProperties($table);
         });
 
-        Schema::create('core_activities', function (Blueprint $table) {
+        Schema::connection('data')->create('core_activities', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeGenericContentModelProperties($table);
         });
 
-        Schema::create('core_user_infos', function (Blueprint $table) {
+        Schema::connection('data')->create('core_user_infos', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
         });
 
-        Schema::create('core_contacts', function (Blueprint $table) {
+        Schema::connection('data')->create('core_contacts', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->text('value', 256)->nullable();
         });
 
-        Schema::create('coupled_activities', function (Blueprint $table) {
+        Schema::connection('data')->create('coupled_activities', function (Blueprint $table) {
             $table->uuid('source_identifier');
             $table->uuid('target_identifier');
             $table->unsignedBigInteger('time')->nullable();
@@ -119,7 +119,7 @@ class CreateCoreTables extends Migration
             $table->index('source_identifier');
         });
 
-        Schema::create('coupled_contents', function (Blueprint $table) {
+        Schema::connection('data')->create('coupled_contents', function (Blueprint $table) {
             $table->uuid('source_identifier');
             $table->uuid('target_identifier');
             $table->unsignedBigInteger('time')->nullable();
@@ -128,7 +128,7 @@ class CreateCoreTables extends Migration
             $table->index('source_identifier');
         });
 
-        Schema::create('coupled_roles', function (Blueprint $table) {
+        Schema::connection('data')->create('coupled_roles', function (Blueprint $table) {
             $table->uuid('source_identifier');
             $table->uuid('target_identifier');
             $table->unsignedInteger('sort_index')->default(0);
@@ -136,7 +136,7 @@ class CreateCoreTables extends Migration
             $table->index('source_identifier');
         });
 
-        Schema::create('coupled_groups', function (Blueprint $table) {
+        Schema::connection('data')->create('coupled_groups', function (Blueprint $table) {
             $table->uuid('source_identifier');
             $table->uuid('target_identifier');
             $table->unsignedInteger('sort_index')->default(0);
@@ -144,7 +144,7 @@ class CreateCoreTables extends Migration
             $table->index('source_identifier');
         });
 
-        Schema::create('coupled_assets', function (Blueprint $table) {
+        Schema::connection('data')->create('coupled_assets', function (Blueprint $table) {
             $table->uuid('source_identifier');
             $table->uuid('target_identifier');
             $table->unsignedInteger('sort_index')->default(0);
@@ -152,7 +152,7 @@ class CreateCoreTables extends Migration
             $table->index('source_identifier');
         });
 
-        Schema::create('core_revisions', function (Blueprint $table) {
+        Schema::connection('data')->create('core_revisions', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             CoreMigrationUtils::initializeBaseContentModelProperties($table);
             $table->string('model');
@@ -166,23 +166,23 @@ class CreateCoreTables extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('coupled_activities');
-        Schema::dropIfExists('coupled_contents');
-        Schema::dropIfExists('coupled_roles');
-        Schema::dropIfExists('coupled_groups');
-        Schema::dropIfExists('coupled_assets');
-        Schema::dropIfExists('core_revisions');
-        Schema::dropIfExists('core_contacts');
-        Schema::dropIfExists('core_activities');
-        Schema::dropIfExists('core_contents');
-        Schema::dropIfExists('core_assets');
-        Schema::dropIfExists('core_geo');
-        Schema::dropIfExists('core_groups');
-        Schema::dropIfExists('core_roles');
-        Schema::dropIfExists('core_user_infos');
-        Schema::dropIfExists('core_users');
-        Schema::dropIfExists('core_countries');
-        Schema::dropIfExists('core_locales');
-        Schema::dropIfExists('core_applications');
+        Schema::connection('data')->dropIfExists('coupled_activities');
+        Schema::connection('data')->dropIfExists('coupled_contents');
+        Schema::connection('data')->dropIfExists('coupled_roles');
+        Schema::connection('data')->dropIfExists('coupled_groups');
+        Schema::connection('data')->dropIfExists('coupled_assets');
+        Schema::connection('data')->dropIfExists('core_revisions');
+        Schema::connection('data')->dropIfExists('core_contacts');
+        Schema::connection('data')->dropIfExists('core_activities');
+        Schema::connection('data')->dropIfExists('core_contents');
+        Schema::connection('data')->dropIfExists('core_assets');
+        Schema::connection('data')->dropIfExists('core_geo');
+        Schema::connection('data')->dropIfExists('core_groups');
+        Schema::connection('data')->dropIfExists('core_roles');
+        Schema::connection('data')->dropIfExists('core_user_infos');
+        Schema::connection('data')->dropIfExists('core_users');
+        Schema::connection('data')->dropIfExists('core_countries');
+        Schema::connection('data')->dropIfExists('core_locales');
+        Schema::connection('data')->dropIfExists('core_applications');
     }
 }

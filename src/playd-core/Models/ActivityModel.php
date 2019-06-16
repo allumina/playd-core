@@ -159,7 +159,7 @@ class ActivityModel extends BaseContentModel
 
     public static function keysSeed()
     {
-        return DB::table('core_activities')
+        return DB::connection('data')->table('core_activities')
             ->select('category', 'type')
             ->distinct()
             ->get();

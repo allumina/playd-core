@@ -214,14 +214,14 @@ abstract class BaseModel extends Model
 
     protected function coupledIdentifiers(string $table)
     {
-        return DB::select('SELECT DISTINCT(target_identifier) AS identifier FROM ' . $table . ' WHERE source_identifier = :source_identifier', array(
+        return DB::connection('data')->select('SELECT DISTINCT(target_identifier) AS identifier FROM ' . $table . ' WHERE source_identifier = :source_identifier', array(
             'source_identifier' => $this->identifier
         ));
     }
 
     protected function addCoupled(string $table, string $target_identifier, int $sort_index = 0)
     {
-        return DB::insert('INSERT INTO ' . $table . '(source_identifier, target_identifier, sort_index) VALUES(:source_identifier, :target_identifier, :sort_index)', array(
+        return DB::connection('data')->insert('INSERT INTO ' . $table . '(source_identifier, target_identifier, sort_index) VALUES(:source_identifier, :target_identifier, :sort_index)', array(
             'source_identifier' => $this->identifier,
             'target_identifier' => $target_identifier,
             'sort_index' => $sort_index
@@ -230,7 +230,7 @@ abstract class BaseModel extends Model
 
     protected function removeCoupled(string $table, string $target_identifier)
     {
-        return DB::delete('DELETE FROM ' . $table . ' WHERE source_identifier = :source_identifier AND target_identifier = :targetIdentifier', array(
+        return DB::connection('data')->delete('DELETE FROM ' . $table . ' WHERE source_identifier = :source_identifier AND target_identifier = :targetIdentifier', array(
             'source_identifier' => $this->identifier,
             'target_identifier' => $target_identifier
         ));
@@ -238,7 +238,7 @@ abstract class BaseModel extends Model
 
     protected function clearCoupled(string $table)
     {
-        return DB::delete('DELETE FROM ' . $table . ' WHERE  source_identifier = :source_identifier', array(
+        return DB::connection('data')->delete('DELETE FROM ' . $table . ' WHERE  source_identifier = :source_identifier', array(
             'source_identifier' => $this->identifier
         ));
     }

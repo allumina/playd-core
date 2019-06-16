@@ -72,7 +72,7 @@ class ContentModel extends BaseContentModel
     public static function keysSeed()
     {
         // TO DO - Add cache
-        return DB::table('core_contents')
+        return DB::connection('data')->table('core_contents')
             ->select('category', 'type')
             ->distinct()
             ->get();

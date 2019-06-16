@@ -45,6 +45,7 @@ class UserModel extends Authenticatable // implements MustVerifyEmail
 
     protected $primaryKey = 'identifier';
 
+    protected $connection = 'data';
     protected $table = 'core_users';
 
     public $timestamps = true;

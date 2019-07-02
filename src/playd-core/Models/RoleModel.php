@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: gesposito
@@ -12,6 +13,7 @@ use Allumina\Playd\Core\Models\Base\BaseModel;
 
 class RoleModel extends BaseModel
 {
+    protected $connection = 'auth';
     protected $table = 'core_roles';
 
     public const CONTEXT = 'role';

@@ -121,6 +121,7 @@ class UserModel extends Authenticatable implements MustVerifyEmail
 
         static::creating(function ($model) {
             $model->uid = Uuid::uuid4()->toString();
+            if (!isset($model->identifier)) $model->assignIdentifier();
             $model->version = 1;
             unset($model->hash);
             $model->hash = hash(Constants::HASH_ALGORITHM, json_encode($model));

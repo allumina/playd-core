@@ -21,6 +21,7 @@ class CreateCoreTables extends Migration
 
         Schema::connection('auth')->create('core_users', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
+            $table->string('name', 256)->unique();
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();

@@ -13,7 +13,7 @@ use Laravel\Passport\HasApiTokens;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Crypt;
 
-class UserModel extends Authenticatable // implements MustVerifyEmail
+class UserModel extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable, HasApiTokens;
     use EntrustUserTrait;

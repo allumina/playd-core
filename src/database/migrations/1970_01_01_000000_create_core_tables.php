@@ -14,19 +14,19 @@ class CreateCoreTables extends Migration
      */
     public function up()
     {
-        Schema::connection('data')->create('core_roles', function (Blueprint $table) {
+        Schema::connection('auth')->create('core_roles', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             $table->text('description')->nullable();
         });
 
-        Schema::connection('data')->create('core_users', function (Blueprint $table) {
+        Schema::connection('auth')->create('core_users', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();
         });
 
-        Schema::connection('data')->create('core_password_resets', function (Blueprint $table) {
+        Schema::connection('auth')->create('core_password_resets', function (Blueprint $table) {
             CoreMigrationUtils::initializeBaseModelProperties($table);
             $table->string('email')->index();
             $table->string('token');

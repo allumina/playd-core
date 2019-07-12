@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/playd-core.iml" filepath="$PROJECT_DIR$/.idea/playd-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../playd-tartan/.idea/playd-tartan.iml" filepath="$PROJECT_DIR$/../playd-tartan/.idea/playd-tartan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../th/th-laravel/.idea/th-laravel.iml" filepath="$PROJECT_DIR$/../th/th-laravel/.idea/th-laravel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../th/th_laravel/.idea/th_laravel.iml" filepath="$PROJECT_DIR$/../th/th_laravel/.idea/th_laravel.iml" />
+    </modules>
+  </component>
+</project>

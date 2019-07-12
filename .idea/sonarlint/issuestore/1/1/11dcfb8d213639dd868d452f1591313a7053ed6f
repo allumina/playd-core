@@ -1,0 +1,22 @@
+
+Z	php:S3358Š"DExtract this nested ternary operation into an independent statement.(¸Ğ¡Ú
+J	php:S1135å"4Complete the task associated to this "TODO" comment.(ßèˆï
+J	php:S1135ş"4Complete the task associated to this "TODO" comment.(ƒ­Ñµ
+J	php:S1066ÿ"/Merge this if statement with the enclosing one.(âªÍáøÿÿÿÿ
+o	php:S3776£"TRefactor this function to reduce its Cognitive Complexity from 32 to the 15 allowed.(–’ÜÀıÿÿÿÿ
+]	php:S1192@"HDefine a constant instead of duplicating this literal "handler" 4 times.(—ò“ğ
+g	php:S1192¦"LDefine a constant instead of duplicating this literal "set_headers" 7 times.(Óè³’úÿÿÿÿ
+g	php:S1192®"LDefine a constant instead of duplicating this literal "form_params" 3 times.(”†µ„ûÿÿÿÿ
+]	php:S1192¥"HDefine a constant instead of duplicating this literal "cookies" 4 times.(±Ë¡3
+e	php:S1192£"ODefine a constant instead of duplicating this literal "decode_content" 4 times.(…óëÄ
+^	php:S1192G"IDefine a constant instead of duplicating this literal "base_uri" 5 times.(Âº²•
+^	php:S1192†"HDefine a constant instead of duplicating this literal "save_to" 3 times.(ÎÆÁ
+h	php:S1192¹"MDefine a constant instead of duplicating this literal "Content-Type" 6 times.(ŸŞß½şÿÿÿÿ
+c	php:S1192q"IDefine a constant instead of duplicating this literal "headers" 17 times.(¸íéıÿÿÿÿ
+\	php:S1192ğ"FDefine a constant instead of duplicating this literal "query" 4 times.(µÒ‹
+d	php:S1192Û"NDefine a constant instead of duplicating this literal "_conditional" 16 times.(ÓÏ
+b	php:S1192s"HDefine a constant instead of duplicating this literal "version" 3 times.(Ğ¤Œ…øÿÿÿÿ
+a	php:S1192Œ"KDefine a constant instead of duplicating this literal "exceptions" 3 times.(Ë¤¤Ä
+a	php:S1192®"FDefine a constant instead of duplicating this literal "proxy" 3 times.(Òğ‰òùÿÿÿÿ
+e	php:S1192¯"JDefine a constant instead of duplicating this literal "multipart" 4 times.(Ü³¼ãşÿÿÿÿ
+Qphp:S131İ"7Add a "case default" clause to this "switch" statement.(Æâïêÿÿÿÿÿ

@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bdf6594f-198a-4f02-9544-73f80a97d5ac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/playd-core/Models/ContentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/playd-core/Models/ContentModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.babelrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.github/CODEOWNERS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.github/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.github/ISSUE_TEMPLATE/bug.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.github/ISSUE_TEMPLATE/bug_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.github/ISSUE_TEMPLATE/feature.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.github/ISSUE_TEMPLATE/feature_request.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.github/SUPPORT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.stylelintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.stylelintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/CODE_OF_CONDUCT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/build/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/build/banner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/build/build-plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/build/change-version.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/build/generate-sri.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/build/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/build/rollup.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/build/ship.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/build/svgo.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/build/vnu-jar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/popover.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/scrollspy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/toast.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/tools/sanitizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/src/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/browsers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/integration/bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/integration/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/integration/rollup.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/popover.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/scrollspy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/toast.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/unit/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/visual/alert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/visual/button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/visual/carousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/visual/collapse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/visual/dropdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/visual/modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/visual/popover.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/visual/scrollspy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/visual/tab.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/visual/toast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/js/tests/visual/tooltip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/nuget/MyGet.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/nuget/bootstrap.nuspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/nuget/bootstrap.sass.nuspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/package.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_button-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_custom-forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_jumbotron.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_media.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_popover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_root.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_spinners.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_toasts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_transitions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/bootstrap-grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/bootstrap-reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_background-variant.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_border-radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_box-shadow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_caret.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_deprecate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_grid-framework.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_hover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_lists.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_nav-divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_reset-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_resize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_table-row.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_text-emphasis.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_text-hide.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_text-truncate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/mixins/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_borders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_display.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_embed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_overflow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_screenreaders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_shadows.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_sizing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_spacing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_stretched-link.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/scss/utilities/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_data/breakpoints.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_data/browser-bugs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_data/browser-features.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_data/colors.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_data/core-team.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_data/docs-versions.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_data/examples.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_data/grays.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_data/nav.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_data/theme-colors.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_data/translations.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/ads.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/analytics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/bugify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/callout-danger-async-methods.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/callout-info-mediaqueries-breakpoints.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/callout-info-prefersreducedmotion.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/callout-warning-color-assistive-technologies.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/callout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/docs-navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/docs-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/favicons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/icons/bootstrap-stack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/icons/bootstrap.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/icons/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/icons/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/icons/import.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/icons/lightning.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/icons/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/icons/opencollective.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/icons/placeholder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/icons/slack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/icons/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/scripts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/skippy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/social.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_includes/stylesheet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_layouts/docs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_layouts/examples.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_layouts/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/_layouts/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/about/brand.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/about/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/about/overview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/about/team.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/about/translations.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/brand/bootstrap-outline.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/brand/bootstrap-punchout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/brand/bootstrap-social-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/brand/bootstrap-social.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/brand/bootstrap-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/css/docs.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/css/docs.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/bootstrap-themes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/bootstrap-themes@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/album.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/album@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/blog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/blog@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/carousel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/carousel@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/checkout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/checkout@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/cover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/cover@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/dashboard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/dashboard@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/floating-labels.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/floating-labels@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/grid@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/jumbotron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/jumbotron@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/navbar-bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/navbar-bottom@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/navbar-fixed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/navbar-fixed@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/navbar-static.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/navbar-static@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/navbars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/navbars@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/offcanvas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/offcanvas@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/pricing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/pricing@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/product.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/product@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/sign-in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/sign-in@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/starter-template.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/starter-template@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/sticky-footer-navbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/sticky-footer-navbar@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/sticky-footer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/examples/sticky-footer@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/mstile-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/mstile-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/mstile-310x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/mstile-310x310.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/mstile-70x70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/img/favicons/safari-pinned-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/js/docs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/js/src/application.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/js/src/ie-emulation-modes-warning.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/js/src/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_ads.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_algolia.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_anchor.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_brand.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_browser-bugs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_callouts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_clipboard-js.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_component-examples.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_content.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_masthead.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_placeholder-img.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_skippy.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_syntax.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/assets/scss/docs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/browser-bugs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/alerts.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/badge.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/breadcrumb.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/button-group.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/buttons.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/card.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/carousel.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/collapse.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/dropdowns.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/forms.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/input-group.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/jumbotron.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/list-group.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/media-object.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/modal.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/navbar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/navs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/pagination.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/popovers.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/progress.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/scrollspy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/spinners.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/toasts.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/components/tooltips.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/content/code.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/content/figures.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/content/images.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/content/reboot.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/content/tables.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/content/typography.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/.stylelintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/album/album.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/album/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/blog/blog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/blog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/carousel/carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/carousel/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/checkout/form-validation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/checkout/form-validation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/checkout/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/cover/cover.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/cover/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/dashboard/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/dashboard/dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/dashboard/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/floating-labels/floating-labels.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/floating-labels/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/grid/grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/grid/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/jumbotron/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/jumbotron/jumbotron.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/navbar-bottom/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/navbar-fixed/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/navbar-fixed/navbar-top-fixed.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/navbar-static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/navbar-static/navbar-top.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/navbars/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/navbars/navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/offcanvas/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/offcanvas/offcanvas.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/offcanvas/offcanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/pricing/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/pricing/pricing.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/product/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/product/product.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/sign-in/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/sign-in/signin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/starter-template/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/starter-template/starter-template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/sticky-footer-navbar/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/sticky-footer-navbar/sticky-footer-navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/sticky-footer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/examples/sticky-footer/sticky-footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/extend/approach.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/extend/icons.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/getting-started/accessibility.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/getting-started/best-practices.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/getting-started/browsers-devices.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/getting-started/build-tools.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/getting-started/contents.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/getting-started/download.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/getting-started/introduction.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/getting-started/javascript.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/getting-started/theming.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/getting-started/webpack.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/layout/grid.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/layout/overview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/layout/utilities-for-layout.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/migration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/borders.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/clearfix.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/close-icon.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/colors.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/display.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/embed.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/flex.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/float.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/image-replacement.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/overflow.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/position.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/screen-readers.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/shadows.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/sizing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/spacing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/stretched-link.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/text.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/vertical-align.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/4.3/utilities/visibility.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/docs/versions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../playd-tartan/src/resources/bower_components/bootstrap/site/sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../th/th_backend/src/database/migrations/2019_03_07_133414_create_backend_tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/../th/th_backend/src/database/migrations/2000_01_01_000000_create_backend_tables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../th/th_backend/src/th-backend/Models/GeoModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../th/th_backend/src/th-backend/Models/ServiceModel.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Data/ActivitiesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="47" column="8" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="49" selection-end-column="9" />
+              <folding>
+                <element signature="e#45#96#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/playd-core/Http/Controllers/SupportController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/playd-core/Http/Controllers/SyncController.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/playd-core/Http/Controllers/SystemController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/playd-core/Models/ContentModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+              <folding>
+                <element signature="e#130#183#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/playd-core/Models/UserInfoModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+              <folding>
+                <element signature="e#130#183#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>User</find>
+      <find>\User</find>
+      <find>add</find>
+      <find>playd-core</find>
+      <find>App\Models\Auth</find>
+      <find>\Allumina\Playd\Core\Models\UserModel</find>
+      <find>App\Models\Auth\</find>
+      <find>_users</find>
+      <find>__construct</find>
+      <find>CreateFreshApiToken</find>
+      <find>hashed</find>
+      <find>hashedpassport</find>
+      <find>Passport</find>
+      <find>oauth_access_tokens</find>
+      <find>onesin</find>
+      <find>address</find>
+      <find>th.allumina</find>
+      <find />
+      <find>time</find>
+      <find>core_users</find>
+      <find>Allumina\Playd\Cms\</find>
+      <find>q</find>
+      <find>::sanitize</find>
+      <find>key</find>
+      <find>Uuid::</find>
+      <find>slug</find>
+      <find>orwhere</find>
+      <find>echo</find>
+      <find>class ActivitiesC</find>
+      <find>ActivitiesController</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>.</replace>
+      <replace>à</replace>
+      <replace>»</replace>
+      <replace>ì</replace>
+      <replace>;</replace>
+      <replace>coupled_groups</replace>
+      <replace>source_identifier</replace>
+      <replace>is_visible</replace>
+      <replace>is_enabled</replace>
+      <replace>$sort_index</replace>
+      <replace>is_deleted</replace>
+      <replace>external_id</replace>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../th/th_laravel/storage/app/templates/onesignal/sample.json" />
+        <option value="$PROJECT_DIR$/../th/th_laravel/app/Models/OneSignal/NotificationModel.php" />
+        <option value="$PROJECT_DIR$/../th/th_laravel/database/seeds/data/structures/structure.template.json" />
+        <option value="$PROJECT_DIR$/../th/th_laravel/database/seeds/data/structures/structures.json" />
+        <option value="$PROJECT_DIR$/../th/th_laravel/database/seeds/data/structures/structures.mountain.json" />
+        <option value="$PROJECT_DIR$/../th/th_laravel/database/seeds/StructuresMountainTablesSeeder.php" />
+        <option value="$PROJECT_DIR$/../th/th_laravel/routes/api.php" />
+        <option value="$PROJECT_DIR$/../th/th_laravel/app/Http/Controllers/Data/StructuresController.php" />
+        <option value="$PROJECT_DIR$/../th/th_laravel/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/src/database/migrations/1970_01_01_000001_create_contacts_tables.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Utils/MigrationUtils.php" />
+        <option value="$PROJECT_DIR$/../th/th_laravel/database/seeds/ContentsTablesSeeder.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/System/UtilsController.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/.env" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Services/NotificationsController.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/app/Managers/OneSignalManager.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Auth/UserController.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Models/UserModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/database/seeds/ApplicationsTablesSeeder.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Models/AttachmentModel.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Models/AuthorModel.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Models/SourceModel.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Models/TagModel.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Models/Base/BaseContentModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/vendor/allumina/playd-core/src/playd-core/Models/ActivityModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/vendor/allumina/playd-core/src/playd-core/Models/ApplicationModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/vendor/allumina/playd-core/src/playd-core/Models/AttachmentModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/database/seeds/OpenWeatherTablesSeeder.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/vendor/allumina/playd-core/src/playd-core/Models/SourceModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/vendor/allumina/playd-core/src/playd-core/Models/ContentModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/vendor/allumina/playd-core/src/playd-core/Models/AuthorModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/vendor/allumina/playd-core/src/playd-core/Models/TagModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/vendor/allumina/playd-core/src/playd-core/Models/Base/BaseContentModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Http/Controllers/SystemController.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/vendor/allumina/playd-core/src/playd-core/Http/Controllers/SystemController.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/database/seeds/UsersTablesSeeder.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/app/Models/Structures/StructureModel.php" />
+        <option value="$PROJECT_DIR$/src/database/migrations/1970_01_01_000000_create_core_tables.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/app/Models/Support/THContentCategories.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Models/ApplicationModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Models/Base/BaseModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/database/seeds/ContentsTablesSeeder.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Models/ActivityModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/routes/api.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Models/UserInfoModel.php" />
+        <option value="$PROJECT_DIR$/src/playd-core/Models/ContentModel.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Data/ActivitiesController.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Data/ContentsController.php" />
+        <option value="$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Data/UsersController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/../laravel_passport_lab/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/laravel/slack-notification-channel" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/php-http/guzzle6-adapter" />
+      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/vendor/laravel/nexmo-notification-channel" />
+      <path value="$PROJECT_DIR$/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/nexmo/client" />
+      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-diactoros" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/orchestra/testbench-core" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/vendor/nette/php-generator" />
+      <path value="$PROJECT_DIR$/vendor/nette/robot-loader" />
+      <path value="$PROJECT_DIR$/vendor/nette/di" />
+      <path value="$PROJECT_DIR$/vendor/orchestra/testbench" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/vendor/nette/neon" />
+      <path value="$PROJECT_DIR$/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/vendor/nette/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/nette/finder" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="963" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Angular</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="playd-core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Personal/Allumina/th/th_laravel" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../th/th_laravel/materials" />
+      <recent name="$PROJECT_DIR$/src/playd-core/Models" />
+      <recent name="$PROJECT_DIR$/src/playd-core/Models/Base" />
+      <recent name="$PROJECT_DIR$/src/playd-core/UserModel" />
+      <recent name="$PROJECT_DIR$/src/playd-core" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Data" />
+      <recent name="$PROJECT_DIR$/src/playd-core/Models" />
+      <recent name="$PROJECT_DIR$/../th/th-laravel/database/seeds" />
+      <recent name="$PROJECT_DIR$/../th/th-laravel" />
+      <recent name="$PROJECT_DIR$/../th/th_laravel/database/seeds" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bdf6594f-198a-4f02-9544-73f80a97d5ac" name="Default Changelist" comment="" />
+      <created>1550656004258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550656004258</updated>
+      <workItem from="1550656006825" duration="17133000" />
+      <workItem from="1550744379705" duration="3322000" />
+      <workItem from="1550828656697" duration="2921000" />
+      <workItem from="1551092496044" duration="8678000" />
+      <workItem from="1551108188919" duration="731000" />
+      <workItem from="1551176087333" duration="1645000" />
+      <workItem from="1551263209294" duration="5394000" />
+      <workItem from="1551342972349" duration="615000" />
+      <workItem from="1551616069300" duration="13179000" />
+      <workItem from="1551957917811" duration="9893000" />
+      <workItem from="1552129426565" duration="9337000" />
+      <workItem from="1552387566792" duration="2070000" />
+      <workItem from="1552422193205" duration="194000" />
+      <workItem from="1552422741756" duration="7858000" />
+      <workItem from="1552558594057" duration="11620000" />
+      <workItem from="1553004127050" duration="5808000" />
+      <workItem from="1553113285553" duration="3732000" />
+      <workItem from="1553183701330" duration="4411000" />
+      <workItem from="1553249396832" duration="4734000" />
+      <workItem from="1553518071088" duration="28000" />
+      <workItem from="1553518151629" duration="806000" />
+      <workItem from="1553950726824" duration="10720000" />
+      <workItem from="1553976744049" duration="4217000" />
+      <workItem from="1554551019241" duration="12128000" />
+      <workItem from="1554711918197" duration="660000" />
+      <workItem from="1554973600706" duration="8648000" />
+      <workItem from="1556367021857" duration="12486000" />
+      <workItem from="1556439059727" duration="25867000" />
+      <workItem from="1556550901263" duration="5760000" />
+      <workItem from="1556616428096" duration="805000" />
+      <workItem from="1556726785234" duration="13888000" />
+      <workItem from="1556830051508" duration="1657000" />
+      <workItem from="1556872871223" duration="5777000" />
+      <workItem from="1556972079726" duration="13000" />
+      <workItem from="1557001874698" duration="6542000" />
+      <workItem from="1557138082614" duration="14410000" />
+      <workItem from="1557237526117" duration="590000" />
+      <workItem from="1557253656236" duration="3698000" />
+      <workItem from="1557395277254" duration="3965000" />
+      <workItem from="1557474919348" duration="916000" />
+      <workItem from="1557502628421" duration="1007000" />
+      <workItem from="1557646318111" duration="455000" />
+      <workItem from="1557654596823" duration="302000" />
+      <workItem from="1557670586465" duration="595000" />
+      <workItem from="1558356289329" duration="4595000" />
+      <workItem from="1558463922234" duration="1256000" />
+      <workItem from="1558525496160" duration="4455000" />
+      <workItem from="1558531661582" duration="4544000" />
+      <workItem from="1558817047694" duration="36307000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="300372000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="963" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.21611722" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="npm" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3283582" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" sideWeight="0.498632" weight="0.14692482" />
+      <window_info anchor="bottom" id="SonarLint" order="8" sideWeight="0.499316" weight="0.32915717" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.18943743" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.492674" visible="true" weight="0.33869115" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.507326" side_tool="true" weight="0.24373576" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.8131868" weight="0.29472476" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13991909" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32938388" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" sideWeight="0.498632" weight="0.14692482" />
+      <window_info anchor="bottom" id="SonarLint" order="8" sideWeight="0.499316" weight="0.32915717" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.492674" visible="true" weight="0.24350032" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.507326" side_tool="true" weight="0.24373576" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.8131868" weight="0.36525047" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../th/th_laravel/app/Http/Controllers/Data/StructuresController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Models/GroupModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="47" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th_laravel/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Models/PostModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th_laravel/database/seeds/StructuresMountainTablesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="59" column="65" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/migrations/1970_01_01_000001_create_contacts_tables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th_laravel/database/seeds/ContentsTablesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#7#39#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-488">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/System/UtilsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Services/NotificationsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Managers/OneSignalManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Auth/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/seeds/PlaydCoreTablesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/database/seeds/AdsTablesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Models/AssetModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-610" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/database/seeds/ApplicationsTablesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="e#7#39#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Utils/MigrationUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Models/AttachmentModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/database/seeds/OpenWeatherTablesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#8#40#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/database/seeds/StructuresMountainTablesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="223" column="25" selection-start-line="223" selection-start-column="25" selection-end-line="223" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/database/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Models/UserModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+          <folding>
+            <element signature="e#46#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="115" column="14" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/config/playd.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/database/seeds/UsersTablesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding>
+            <element signature="e#7#39#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/migrations/1970_01_01_000000_create_core_tables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="114" column="30" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Models/Structures/StructureModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="42" column="70" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Models/ApplicationModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/database/seeds/StructuresTablesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2975">
+          <caret line="78" column="9" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="78" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Models/Support/THContentCategories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#118#168#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Models/Structures/StructureGroupModel.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="357" column="13" selection-start-line="357" selection-start-column="13" selection-end-line="357" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Models/Base/BaseContentModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Models/Base/BaseModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1663">
+          <caret line="238" column="80" selection-start-line="238" selection-start-column="80" selection-end-line="238" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/database/seeds/ContentsTablesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="59" column="16" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="16" />
+          <folding>
+            <element signature="e#7#39#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Models/ActivityModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="43" />
+          <folding>
+            <element signature="e#130#183#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Models/UserInfoModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+          <folding>
+            <element signature="e#130#183#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Http/Controllers/DataController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Http/Controllers/SyncController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Http/Controllers/SystemController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Models/ContentModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+          <folding>
+            <element signature="e#130#183#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Data/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#45#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Data/StructuresController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Data/GroupController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Data/ContentsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
+          <folding>
+            <element signature="e#45#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../th/th-laravel/app/Http/Controllers/Data/ActivitiesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="47" column="8" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="49" selection-end-column="9" />
+          <folding>
+            <element signature="e#45#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playd-core/Http/Controllers/SupportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>Allumina</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32806325" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

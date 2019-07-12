@@ -1,0 +1,6 @@
+
+€	php:S1448"fClass "Connection" has 74 methods, which is greater than 20 authorized. Split it into smaller classes.(–ÔÔ°ÿÿÿÿÿ
+e	php:S1142£"OReduce the number of returns of this function 4, down to the maximum allowed 3.(åûÌÄ
+e	php:S1142¡"OReduce the number of returns of this function 4, down to the maximum allowed 3.(³æØ§
+n	php:S1117 "SRename "$loggingQueries" which has the same name as the field declared at line 130.(ïÑ´†þÿÿÿÿ
+Qphp:S131©"7Add a "case default" clause to this "switch" statement.(­û—÷ùÿÿÿÿ

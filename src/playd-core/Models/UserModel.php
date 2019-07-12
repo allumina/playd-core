@@ -12,6 +12,7 @@ use Zizaco\Entrust\Traits\EntrustUserTrait;
 use Laravel\Passport\HasApiTokens;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Crypt;
+use Allumina\Playd\Core\Notifications\ActivateUserEmail;
 
 class UserModel extends Authenticatable implements MustVerifyEmail
 {
@@ -194,5 +195,10 @@ class UserModel extends Authenticatable implements MustVerifyEmail
     public static function getGenericImage()
     {
         return Storage::path(UserModel::IMAGES_PATH . '/' . 'generic.png');
+    }
+
+    public function sendEmailVerificationMessage($token)
+    {
+        $this->notify(new ActivateUserEmail($token));
     }
 }

@@ -23,6 +23,7 @@ class CreateCoreTables extends Migration
             CoreMigrationUtils::initializeBaseModelProperties($table);
             $table->string('name', 256)->unique();
             $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
         });

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="th.allumina.it" autoUploadExternalChanges="true" showDifferentInSync="false" showNewOnSourceInSync="false">
+    <serverData>
+      <paths name="th.allumina.it">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/var/www/th.allumina.it" local="$PROJECT_DIR$/../th/th-laravel" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/../th/th-laravel/composer.json" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../th/th-laravel/composer.lock" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../th/th-laravel/.env" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../th/th-laravel/storage/framework" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../th/th-laravel/storage/logs" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../th/th-laravel/storage/debugbar" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../th/th-laravel/storage/oauth-private.key" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../th/th-laravel/storage/oauth-public.key" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../th/th-laravel/vendor/" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../th/th-laravel/node_modules" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../th/th-laravel/tmp" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../th/th-laravel/bootstrap/cache" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>

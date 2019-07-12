@@ -1,0 +1,183 @@
+
+Pphp:S121t"0Add curly braces around the nested statement(s).(Ö›úãûÿÿÿÿ8í¤¤¶—-
+e	php:S1192¹"HDefine a constant instead of duplicating this literal "month: " 4 times.(Ê¹„í8ì¤¤¶—-
+„	php:S1192â"bDefine a constant instead of duplicating this literal "elemHour: in_the_60_minutes_past_" 3 times.(–½Ç…øÿÿÿÿ8ö›¶—-
+K	php:S1066ª"/Merge this if statement with the enclosing one.(§úô8ì¤¤¶—-
+Qphp:S121Ò"0Add curly braces around the nested statement(s).(ï‹ò¯şÿÿÿÿ8ö›¶—-
+”php:S138Ó"xThis function "initLang" has 242 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(ÿ¿Ò†8í¤¤¶—-
+l	php:S1142ø"OReduce the number of returns of this function 4, down to the maximum allowed 3.(şÚ·Š8ì¤¤¶—-
+Qphp:S121ö	"0Add curly braces around the nested statement(s).(‹Àßîüÿÿÿÿ8ö›¶—-
+Lphp:S121¤"0Add curly braces around the nested statement(s).(Ø°°8í¤¤¶—-
+Q	php:S1066ú"/Merge this if statement with the enclosing one.(¹•ÿÿÿÿÿ8ö›¶—-
+Qphp:S121½"0Add curly braces around the nested statement(s).(¼’Ñ¢øÿÿÿÿ8ö›¶—-
+Qphp:S121†"0Add curly braces around the nested statement(s).(µá„•ÿÿÿÿÿ8í¤¤¶—-
+Lphp:S121¼"0Add curly braces around the nested statement(s).(§Å¶‰8í¤¤¶—-
+bphp:S112Ÿ"FDefine and throw a dedicated exception instead of using a generic one.(…²ùÎ8ì¤¤¶—-
+Qphp:S121ß"0Add curly braces around the nested statement(s).(¯¼¡íüÿÿÿÿ8í¤¤¶—-
+l	php:S1192‚"JDefine a constant instead of duplicating this literal "ordinal: " 6 times.(µÕÕıÿÿÿÿ8í¤¤¶—-
+Lphp:S121÷"0Add curly braces around the nested statement(s).(ÿâƒé8í¤¤¶—-
+Lphp:S121ı"0Add curly braces around the nested statement(s).(©ÍĞè8ö›¶—-
+Lphp:S121Ê"0Add curly braces around the nested statement(s).(ú´‡¯8í¤¤¶—-
+Q	php:S1068"0Remove this unused "$occurrences" private field.(³¢îóüÿÿÿÿ8ä¶«¶—-
+Qphp:S121ö"0Add curly braces around the nested statement(s).(©ÌÀ¡ıÿÿÿÿ8í¤¤¶—-
+Lphp:S121¨"0Add curly braces around the nested statement(s).(¸ƒğ‡8í¤¤¶—-
+Lphp:S121ü"0Add curly braces around the nested statement(s).(³ƒİĞ8í¤¤¶—-
+l	php:S1142˜"OReduce the number of returns of this function 7, down to the maximum allowed 3.(Ú¼÷8ì¤¤¶—-
+aphp:S112—"FDefine and throw a dedicated exception instead of using a generic one.(Ú—ö.8ö›¶—-
+j	php:S1192c"IDefine a constant instead of duplicating this literal "rangeMin" 7 times.(ÛşËúÿÿÿÿ8í¤¤¶—-
+l	php:S1192ç"ODefine a constant instead of duplicating this literal "elemDOM: the_X" 3 times.(Ê¿Ä‹8ö›¶—-
+Qphp:S121õ	"0Add curly braces around the nested statement(s).(Õæß™ıÿÿÿÿ8í¤¤¶—-
+Q	php:S1066û"/Merge this if statement with the enclosing one.(µö¥Êûÿÿÿÿ8ö›¶—-
+e	php:S1192ı"HDefine a constant instead of duplicating this literal "_plural" 8 times.(©ÍĞè8í¤¤¶—-
+Q	php:S1066­"/Merge this if statement with the enclosing one.(‘óäÒıÿÿÿÿ8ö›¶—-
+k	php:S1192ú"NDefine a constant instead of duplicating this literal "elemDOW: on_X" 3 times.(ÕÕšı8í¤¤¶—-
+†	php:S1448"eClass "CronUtils" has 30 methods, which is greater than 20 authorized. Split it into smaller classes.(Ûâùÿÿÿÿ8ö›¶—-
+Kphp:S121—"0Add curly braces around the nested statement(s).(Ú—ö.8ö›¶—-
+L	php:S1066ø"/Merge this if statement with the enclosing one.(Òİß¿8ì¤¤¶—-
+g	php:S1192·"JDefine a constant instead of duplicating this literal "interval" 16 times.(óÏşò8ö›¶—-
+}	php:S1192á"`Define a constant instead of duplicating this literal "elemHour: between_X:00_and_Y:59" 4 times.(è˜äş8ö›¶—-
+t	php:S1192û"WDefine a constant instead of duplicating this literal "elemDOW: but_only_on_X" 3 times.(ğ€“8ö›¶—-
+Kphp:S121#"0Add curly braces around the nested statement(s).(¦Ùª8í¤¤¶—-
+d	php:S1192/"HDefine a constant instead of duplicating this literal "minutes" 4 times.(—şÎá8í¤¤¶—-
+Kphp:S121u"0Add curly braces around the nested statement(s).(Àšàô8ö›¶—-
+Lphp:S121ç"0Add curly braces around the nested statement(s).(¤ÿì8í¤¤¶—-
+Lphp:S121ø"0Add curly braces around the nested statement(s).(Òİß¿8ö›¶—-
+Lphp:S121×"0Add curly braces around the nested statement(s).(ú´‡¯8í¤¤¶—-
+Lphp:S121"0Add curly braces around the nested statement(s).(ï¿•8í¤¤¶—-
+Lphp:S121–"0Add curly braces around the nested statement(s).(’›òÁ8ö›¶—-
+q	php:S1142¹"OReduce the number of returns of this function 5, down to the maximum allowed 3.(ãÌ™Ãıÿÿÿÿ8ì¤¤¶—-
+Lphp:S121¾"0Add curly braces around the nested statement(s).(„¨ó8ö›¶—-
+Kphp:S121ı	"0Add curly braces around the nested statement(s).(ã¶µ8í¤¤¶—-
+p	php:S1192î"SDefine a constant instead of duplicating this literal "elemMonth: every_X" 3 times.(şµ‰ç8ö›¶—-
+Lphp:S121©"0Add curly braces around the nested statement(s).(ä›çÂ8ö›¶—-
+Qphp:S121 "0Add curly braces around the nested statement(s).(™Ø¬¶ÿÿÿÿÿ8ö›¶—-
+Lphp:S121¦"0Add curly braces around the nested statement(s).(ú´‡¯8í¤¤¶—-
+f	php:S3358í"DExtract this nested ternary operation into an independent statement.(ÙÏáüÿÿÿÿ8ì¤¤¶—-
+l	php:S1142ï"OReduce the number of returns of this function 4, down to the maximum allowed 3.(®æ¢ò8ì¤¤¶—-
+x	php:S1192İ"VDefine a constant instead of duplicating this literal "elemMin: every_minute" 3 times.(ŠÌ½ûÿÿÿÿ8í¤¤¶—-
+j	php:S1301Õ"MReplace this "switch" statement with "if" statements to increase readability.(¨à½‰8ì¤¤¶—-
+Qphp:S121®"0Add curly braces around the nested statement(s).(ã²µûÿÿÿÿ8í¤¤¶—-
+Qphp:S121¡"0Add curly braces around the nested statement(s).(®±å’üÿÿÿÿ8ö›¶—-
+j	php:S1301Ë	"MReplace this "switch" statement with "if" statements to increase readability.(µÕ·ß8ì¤¤¶—-
+Kphp:S121ª"0Add curly braces around the nested statement(s).(§úô8ö›¶—-
+Qphp:S121Ñ"0Add curly braces around the nested statement(s).(‘úñ³øÿÿÿÿ8ö›¶—-
+‰	php:S1192Ù"gDefine a constant instead of duplicating this literal "elemMin: after_the_hour_every_X_minute" 3 times.(†´„¶øÿÿÿÿ8ö›¶—-
+Lphp:S121©"0Add curly braces around the nested statement(s).(‰¬¤³8í¤¤¶—-
+Qphp:S121ª"0Add curly braces around the nested statement(s).(›Íê¥ùÿÿÿÿ8í¤¤¶—-
+Qphp:S121¯"0Add curly braces around the nested statement(s).(õ¯Ûÿşÿÿÿÿ8í¤¤¶—-
+Q	php:S1066ù"/Merge this if statement with the enclosing one.(Ú”Ûÿÿÿÿÿ8ö›¶—-
+r	php:S1192ß"PDefine a constant instead of duplicating this literal "elemMin: at_X:Y" 3 times.(ßîÈøÿÿÿÿ8ö›¶—-
+Lphp:S121á"0Add curly braces around the nested statement(s).(¦®§Ğ8í¤¤¶—-
+Sphp:S131Õ"7Add a "case default" clause to this "switch" statement.(¨à½‰8í¤¤¶—-
+F	php:S1068"*Remove this unused "$years" private field.(‹Ô´8¼‚¡¶—-
+q	php:S3776ø"TRefactor this function to reduce its Cognitive Complexity from 31 to the 15 allowed.(şÚ·Š8ì¤¤¶—-
+„	php:S1192Û"bDefine a constant instead of duplicating this literal "elemMin: every_consecutive_minute" 3 times.(ÆŞ¦ğşÿÿÿÿ8í¤¤¶—-
+l	php:S1192õ"ODefine a constant instead of duplicating this literal "elemYear: in_X" 4 times.(¢İö¸8ö›¶—-
+f	php:S1192e"JDefine a constant instead of duplicating this literal "elements" 17 times.(ùö8ö›¶—-
+Lphp:S121Œ
+"0Add curly braces around the nested statement(s).(¼ŞÓÏ8ö›¶—-
+Lphp:S121ì"0Add curly braces around the nested statement(s).(í¶©£8í¤¤¶—-
+Pphp:S121]"0Add curly braces around the nested statement(s).(«ü¶´ıÿÿÿÿ8í¤¤¶—-
+u	php:S1192î"SDefine a constant instead of duplicating this literal "natlangElementHour" 4 times.(½òÃ½üÿÿÿÿ8í¤¤¶—-
+Qphp:S121ª"0Add curly braces around the nested statement(s).(¢¶ ±üÿÿÿÿ8í¤¤¶—-
+F	php:S1125»")Remove the literal "FALSE" boolean value.( öüı8í¤¤¶—-
+Qphp:S121¬"0Add curly braces around the nested statement(s).(‚²ê€ùÿÿÿÿ8ö›¶—-
+Qphp:S121ù"0Add curly braces around the nested statement(s).(Ú”Ûÿÿÿÿÿ8ö›¶—-
+gphp:S112¡"FDefine and throw a dedicated exception instead of using a generic one.(®±å’üÿÿÿÿ8ö›¶—-
+L	php:S1066«"/Merge this if statement with the enclosing one.(Ã‘Ó8ö›¶—-
+gphp:S112ª"FDefine and throw a dedicated exception instead of using a generic one.(¢¶ ±üÿÿÿÿ8ì¤¤¶—-
+Qphp:S121"0Add curly braces around the nested statement(s).(‚¹Í…ÿÿÿÿÿ8í¤¤¶—-
+g	php:S11920"FDefine a constant instead of duplicating this literal "hours" 4 times.(‘Î¿¦øÿÿÿÿ8ö›¶—-
+Qphp:S121û"0Add curly braces around the nested statement(s).(µö¥Êûÿÿÿÿ8ö›¶—-
+v	php:S1192ô"TDefine a constant instead of duplicating this literal "elemMonth: during_X" 3 times.(€ê­Èùÿÿÿÿ8ö›¶—-
+Qphp:S121Ğ"0Add curly braces around the nested statement(s).(½úâµúÿÿÿÿ8í¤¤¶—-
+aphp:S112^"FDefine and throw a dedicated exception instead of using a generic one.(İçíÚ8ì¤¤¶—-
+v	php:S3776Ş"TRefactor this function to reduce its Cognitive Complexity from 42 to the 15 allowed.(Æµªìøÿÿÿÿ8ì¤¤¶—-
+	php:S1192è"_Define a constant instead of duplicating this literal "elemDOM: every_consecutive_day" 3 times.(¶ÊÇåûÿÿÿÿ8ö›¶—-
+Kphp:S121è"0Add curly braces around the nested statement(s).(É«ÊH8í¤¤¶—-
+Lphp:S121¦"0Add curly braces around the nested statement(s).(†ïçº8í¤¤¶—-
+Lphp:S121¶"0Add curly braces around the nested statement(s).(ì¬ŒŞ8í¤¤¶—-
+Qphp:S121Ô"0Add curly braces around the nested statement(s).(’äÓÏûÿÿÿÿ8í¤¤¶—-
+Qphp:S121¬"0Add curly braces around the nested statement(s).(•¨¸ñÿÿÿÿÿ8í¤¤¶—-
+Lphp:S121µ"0Add curly braces around the nested statement(s).(ïì†á8í¤¤¶—-
+ƒ	php:S1192ë"aDefine a constant instead of duplicating this literal "elemDOM: between_the_Xth_and_Yth" 3 times.(ëŞÀØüÿÿÿÿ8ö›¶—-
+Lphp:S121Ù"0Add curly braces around the nested statement(s).(á™Êà8ö›¶—-
+x	php:S1192ñ"[Define a constant instead of duplicating this literal "elemMonth: between_X_and_Y" 3 times.(×Ò÷æ8í¤¤¶—-
+Lphp:S121•"0Add curly braces around the nested statement(s).(¾Ä›8í¤¤¶—-
+Qphp:S121Õ"0Add curly braces around the nested statement(s).(­¯«®ÿÿÿÿÿ8ö›¶—-
+o	php:S1192ì"RDefine a constant instead of duplicating this literal "elemDOM: on_the_X" 3 times.(£•İ½8ö›¶—-
+l	php:S1142Æ"OReduce the number of returns of this function 4, down to the maximum allowed 3.(î¢¥ª8ì¤¤¶—-
+Qphp:S121¨"0Add curly braces around the nested statement(s).(Ì‰æùÿÿÿÿÿ8í¤¤¶—-
+k	php:S1192²"IDefine a constant instead of duplicating this literal "number1" 30 times.(¨Ííêüÿÿÿÿ8í¤¤¶—-
+^	php:S1481à"ARemove this unused "$switchForceDateExplaination" local variable.(Æâ°¦8í¤¤¶—-
+Qphp:S121ø	"0Add curly braces around the nested statement(s).(„¶áìøÿÿÿÿ8í¤¤¶—-
+Lphp:S121…
+"0Add curly braces around the nested statement(s).(‘¶ó´8í¤¤¶—-
+p	php:S3776Z"TRefactor this function to reduce its Cognitive Complexity from 56 to the 15 allowed.(â¢¶ã8ì¤¤¶—-
+aphp:S112u"FDefine and throw a dedicated exception instead of using a generic one.(Àšàô8ì¤¤¶—-
+Qphp:S121ÿ	"0Add curly braces around the nested statement(s).(„¶áìøÿÿÿÿ8í¤¤¶—-
+Qphp:S121ú"0Add curly braces around the nested statement(s).(¹•ÿÿÿÿÿ8ö›¶—-
+w	php:S1192æ"ZDefine a constant instead of duplicating this literal "elemHour: past_every_hour" 3 times.(·ŸÇ›8í¤¤¶—-
+w	php:S1192Ø"UDefine a constant instead of duplicating this literal "elemMin: at_the_hour" 3 times.(ûŞ¼ıøÿÿÿÿ8í¤¤¶—-
+v	php:S1192Ş"YDefine a constant instead of duplicating this literal "elemMin: between_X_and_Y" 3 times.(™æ¦ú8ö›¶—-
+j	php:S1192î"HDefine a constant instead of duplicating this literal "between" 3 times.(½òÃ½üÿÿÿÿ8í¤¤¶—-
+q	php:S3776Æ"TRefactor this function to reduce its Cognitive Complexity from 31 to the 15 allowed.(î¢¥ª8ì¤¤¶—-
+Qphp:S121†
+"0Add curly braces around the nested statement(s).(¾Ò«úÿÿÿÿ8ö›¶—-
+Qphp:S121ª"0Add curly braces around the nested statement(s).(öÔ‹ªıÿÿÿÿ8í¤¤¶—-
+Lphp:S121Î"0Add curly braces around the nested statement(s).(§Å¶‰8í¤¤¶—-
+bphp:S112«"FDefine and throw a dedicated exception instead of using a generic one.(ËÁèƒ8ö›¶—-
+q	php:S1142Ê"OReduce the number of returns of this function 4, down to the maximum allowed 3.(Üêÿıÿÿÿÿ8ì¤¤¶—-
+gphp:S112 "FDefine and throw a dedicated exception instead of using a generic one.(™Ø¬¶ÿÿÿÿÿ8ö›¶—-
+f	php:S3358Š
+"DExtract this nested ternary operation into an independent statement.(ˆ¯¥šüÿÿÿÿ8ì¤¤¶—-
+J	php:S1068".Remove this unused "$cronYears" private field.(¸»Şü8¦“¬¶—-
+K	php:S1066u"/Merge this if statement with the enclosing one.(Àšàô8ì¤¤¶—-
+Lphp:S121¸"0Add curly braces around the nested statement(s).(ú´‡¯8í¤¤¶—-
+Lphp:S121‘"0Add curly braces around the nested statement(s).(ßáŸ”8í¤¤¶—-
+Qphp:S121’"0Add curly braces around the nested statement(s).(Ç¤ü¯ÿÿÿÿÿ8ö›¶—-
+|	php:S1192ó"ZDefine a constant instead of duplicating this literal "elemMonth: during_every_X" 3 times.(¤ÔÈíøÿÿÿÿ8ö›¶—-
+Lphp:S121Ú"0Add curly braces around the nested statement(s).(İ¦¯8ö›¶—-
+j	php:S1192³"MDefine a constant instead of duplicating this literal "hasInterval" 10 times.(¸ØËó8ö›¶—-
+Lphp:S121„"0Add curly braces around the nested statement(s).(ì¬ŒŞ8í¤¤¶—-
+Lphp:S121«"0Add curly braces around the nested statement(s).(ËÁèƒ8ö›¶—-
+Qphp:S121­"0Add curly braces around the nested statement(s).(‘óäÒıÿÿÿÿ8ö›¶—-
+ƒ	php:S1192ö"aDefine a constant instead of duplicating this literal "elemYear: every_consecutive_year" 3 times.(åØİÑşÿÿÿÿ8ö›¶—-
+M	php:S1862í"+This branch duplicates the one on line 360.(àéòŒüÿÿÿÿ8ì¤¤¶—-
+M	php:S1862Ÿ"+This branch duplicates the one on line 538.(àéòŒüÿÿÿÿ8ì¤¤¶—-
+Lphp:S121–"0Add curly braces around the nested statement(s).(¦«´‰8ö›¶—-
+	php:S1192ä"bDefine a constant instead of duplicating this literal "elemHour: past_every_consecutive_" 3 times.(ø«ÌÄ8í¤¤¶—-
+Lphp:S121È	"0Add curly braces around the nested statement(s).(ş¿ğĞ8í¤¤¶—-
+q	php:S1192à"TDefine a constant instead of duplicating this literal "elemHour: past_X:00" 3 times.(ìÄãÜ8ö›¶—-
+Kphp:S121è"0Add curly braces around the nested statement(s).(ôİ f8ö›¶—-
+Qphp:S121Ø"0Add curly braces around the nested statement(s).(ù½â®ùÿÿÿÿ8í¤¤¶—-
+Qphp:S121"0Add curly braces around the nested statement(s).(…ˆ‘ÿøÿÿÿÿ8í¤¤¶—-
+Lphp:S121Ÿ"0Add curly braces around the nested statement(s).(…²ùÎ8ö›¶—-
+Lphp:S121…"0Add curly braces around the nested statement(s).(”³ÕÊ8í¤¤¶—-
+Lphp:S121‹
+"0Add curly braces around the nested statement(s).(–œ£‹8í¤¤¶—-
+Qphp:S121¼"0Add curly braces around the nested statement(s).(±ôß»ûÿÿÿÿ8ö›¶—-
+Qphp:S121‰
+"0Add curly braces around the nested statement(s).(×Û£êùÿÿÿÿ8í¤¤¶—-
+Lphp:S121«"0Add curly braces around the nested statement(s).(Ã‘Ó8ö›¶—-
+Lphp:S121»"0Add curly braces around the nested statement(s).( öüı8í¤¤¶—-
+j	php:S1192d"IDefine a constant instead of duplicating this literal "rangeMax" 7 times.(Ãìİùÿÿÿÿ8ö›¶—-
+:php:S125o"Remove this commented out code.(ÌÂâ8í¤¤¶—-
+Kphp:S121¶"0Add curly braces around the nested statement(s).(ôİ f8ö›¶—-
+Kphp:S121Ó"0Add curly braces around the nested statement(s).(ŞÓİ(8ö›¶—-
+k	php:S1192¶"IDefine a constant instead of duplicating this literal "number2" 14 times.(ÑÔİ¶øÿÿÿÿ8í¤¤¶—-
+Qphp:S121Ù"0Add curly braces around the nested statement(s).(„¶áìøÿÿÿÿ8í¤¤¶—-
+k	php:S1192í"NDefine a constant instead of duplicating this literal "elemDOM: on_X" 3 times.( ¬Óß8ö›¶—-
+P	php:S1068"4Remove this unused "$cronOccurrences" private field.(ö²Ë‡8¦“¬¶—-
+Lphp:S121Ô"0Add curly braces around the nested statement(s).(åÍË°8ö›¶—-
+Qphp:S121”"0Add curly braces around the nested statement(s).(¯¼¡íüÿÿÿÿ8í¤¤¶—-
+Lphp:S121•"0Add curly braces around the nested statement(s).(¦°‰Ğ8í¤¤¶—-
+w	php:S1192ò"ZDefine a constant instead of duplicating this literal "elemMonth: of_every_month" 3 times.(´ô‘ë8ö›¶—-
+…	php:S1192ï"cDefine a constant instead of duplicating this literal "elemMonth: every_consecutive_month" 3 times.(…øšáüÿÿÿÿ8ö›¶—-
+Qphp:S121˜"0Add curly braces around the nested statement(s).(›Íê¥ùÿÿÿÿ8í¤¤¶—-
+k	php:S1192ü"NDefine a constant instead of duplicating this literal "separator_and" 4 times.(¼ÏŞ’8ö›¶—-
+Q	php:S1066¬"/Merge this if statement with the enclosing one.(‚²ê€ùÿÿÿÿ8ö›¶—-
+w	php:S1192ø"[Define a constant instead of duplicating this literal "elemYear: from_X_through_Y" 3 times.(ó·,8í¤¤¶—-
+bphp:S112–"FDefine and throw a dedicated exception instead of using a generic one.(’›òÁ8ì¤¤¶—-
+l	php:S1142ü"OReduce the number of returns of this function 4, down to the maximum allowed 3.(í‚¢é8ì¤¤¶—-
+x	php:S1192ê"VDefine a constant instead of duplicating this literal "elemDOM: on_every_day" 3 times.(ÿÉÓ°ÿÿÿÿÿ8í¤¤¶—-

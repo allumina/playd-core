@@ -1,0 +1,6 @@
+
+c	php:S1117·"MRename "$wildcards" which has the same name as the field declared at line 37.(®û±•
+>	php:S1125"(Remove the literal "true" boolean value.(û˜²ƒ
+b	php:S1192t"HDefine a constant instead of duplicating this literal "_pushed" 3 times.(ÓŞ€ÿÿÿÿÿ
+{	php:S1448"fClass "Dispatcher" has 32 methods, which is greater than 20 authorized. Split it into smaller classes.(È»ö€
+h	php:S1117£"MRename "$listeners" which has the same name as the field declared at line 30.(şÔÿºøÿÿÿÿ

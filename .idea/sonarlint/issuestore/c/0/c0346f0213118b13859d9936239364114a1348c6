@@ -1,0 +1,15 @@
+
+m	php:S1192"LDefine a constant instead of duplicating this literal "update_time" 4 times.(úÀİÙüÿÿÿÿ8»ìæ§-
+m	php:S1192@"LDefine a constant instead of duplicating this literal "external_id" 6 times.(êèÆûÿÿÿÿ8»ìæ§-
+o	php:S1192ª"RDefine a constant instead of duplicating this literal "source_identifier" 4 times.(ê›¡Ü8×Ä“Ô¦-
+d	php:S1192("JDefine a constant instead of duplicating this literal "timestamp" 3 times.(«”ù„ùÿÿÿÿ
+g	php:S1192"LDefine a constant instead of duplicating this literal "delete_time" 4 times.(Óáé>8»ìæ§-
+?php:S125X"Remove this commented out code.(Ğš¯£ÿÿÿÿÿ8»ìæ§-
+;php:S125…"Remove this commented out code.(Ì¶Üí8»ìæ§-
+h	php:S1192:"GDefine a constant instead of duplicating this literal "locale" 3 times.(»ºµıÿÿÿÿ8è–à—-
+?php:S125"Remove this commented out code.( ™©Şúÿÿÿÿ8»ìæ§-
+@php:S125‚"Remove this commented out code.(¢ÑàĞüÿÿÿÿ8»ìæ§-
+	php:S1448
+"eClass "BaseModel" has 21 methods, which is greater than 20 authorized. Split it into smaller classes.(èê‹ã8–õÖœ°-
+l	php:S1192!"KDefine a constant instead of duplicating this literal "identifier" 5 times.(Ì£ßİıÿÿÿÿ8×Ä“Ô¦-
+m	php:S1192"LDefine a constant instead of duplicating this literal "create_time" 4 times.(÷…çÙúÿÿÿÿ8»ìæ§-

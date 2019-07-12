@@ -1,0 +1,10 @@
+
+P	php:S1185"6Remove this method "__construct" to simply inherit it.(Û¾÷öüÿÿÿÿ
+Jphp:S121…"0Add curly braces around the nested statement(s).(„¶áìøÿÿÿÿ
+Iphp:S121o"0Add curly braces around the nested statement(s).(ÑÀüüÿÿÿÿ
+d	php:S1192P"ODefine a constant instead of duplicating this literal "coupled_assets" 5 times.(Éå İ
+Jphp:S121ƒ"0Add curly braces around the nested statement(s).(ÑÀüüÿÿÿÿ
+a	php:S1192g"LDefine a constant instead of duplicating this literal "external_id" 3 times.(Á™½‹
+Iphp:S121q"0Add curly braces around the nested statement(s).(„¶áìøÿÿÿÿ
+i	php:S1192+"ODefine a constant instead of duplicating this literal "coupled_groups" 5 times.(‹Œûÿÿÿÿ
+\	php:S1192i"GDefine a constant instead of duplicating this literal "locale" 6 times.(õ„¦ 

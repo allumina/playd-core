@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../nutroo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../playd-auth" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../playd-tartan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../th/th-laravel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../th/th_backend" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../th/th_laravel" vcs="Git" />
+  </component>
+</project>

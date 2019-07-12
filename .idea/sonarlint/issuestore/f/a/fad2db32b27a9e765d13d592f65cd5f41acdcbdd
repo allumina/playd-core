@@ -1,0 +1,8 @@
+
+i	php:S3776"URefactor this function to reduce its Cognitive Complexity from 138 to the 15 allowed.(­®Õb
+a	php:S1192 "GDefine a constant instead of duplicating this literal "locale" 6 times.(”òøˆÿÿÿÿÿ
+\	php:S1192U"GDefine a constant instead of duplicating this literal "cover" 12 times.(İ£æ¨
+_	php:S1192g"JDefine a constant instead of duplicating this literal "Checking " 3 times.(íÕ‡¸
+a	php:S1192"LDefine a constant instead of duplicating this literal "identifier" 19 times.(ßØà
+^	php:S1192"IDefine a constant instead of duplicating this literal "contents" 3 times.(üØ ×
+‘php:S138"~This function "seedStructures" has 201 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(­®Õb
